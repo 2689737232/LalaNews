@@ -1,0 +1,63 @@
+<view class="container-newsDatail">
+	<text class="title">{{newsDetail.newsTitle}}</text>
+	<view class="author-box">
+		<image class="icon" src="{{newsDetail.authorIcon}}" />
+		<view class="right-box">
+			<view class="author">{{newsDetail.author}}</view>
+			<view class="time-box">
+				<text class="time">{{newsDetail.time}}日</text>
+				<text class="read" space="emsp">阅读：{{newsDetail.readNumber}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="news-description-box">
+		<block wx:for="{{newsDetail.description}}" wx:key="{{item}}">
+			<block wx:if="{{item.paragraphType == 1}}">
+				<view class="paragraph">{{item.paragraphText}}</view>
+			</block>
+			<block wx:elif="{{item.paragraphType == 3}}">
+				<image class="content-image" src="{{item.imageUrl}}" />
+			</block>
+		</block>
+	</view>
+</view>
+<view class="share-box">
+	<view class="share">
+		<image class="share-image" src="/src/image/分享.png" />
+		<text class="text">分享一下</text>
+	</view>
+</view>
+<!-- 推荐列表 -->
+<view class="recommend-list" />
+<!-- 评论列表 -->
+<view class="comment-box">
+	<!-- 评论列表 -->
+	<comment-list bind:showReview="showReview" commentList="{{newsDetail.comments}}" />
+</view>
+<view class="foot" />
+<!-- 底部固定喜欢和评论按钮 -->
+<view class="bottom-comment">
+	<view class="right-like">
+		<image class="comment-icon like" src="/src/image/喜欢.png" />
+		{{newsDetail.likeNumber}}
+	</view>
+	<view class="middle-line" />
+	<view class="left-comment">
+		<image class="comment-icon comment" src="/src/image/消息.png" />
+		{{newsDetail.commentNumber}}
+	</view>
+</view>
+<view class="input-wrapper" wx:if="{{isReview}}">
+	<view class="input-box">
+		<input
+		 bindconfirm="bindconfirm"
+		 class="input-review {{isReview}}"
+		 cursor-spacing="5"
+		 confirm-type="send"
+		 placeholder="回复{{review}}: "
+		 type="text"
+		>输入框
+		</input>
+	</view>
+</view>
+

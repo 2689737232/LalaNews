@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CommentServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EruekaServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Hystrix" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JSON" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NewsServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TagServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul" charset="UTF-8" />
+  </component>
+</project>

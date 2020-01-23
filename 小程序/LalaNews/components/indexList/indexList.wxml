@@ -1,0 +1,22 @@
+<!-- 首页滚动列表 -->
+<view class="scroll-container">
+	<!-- 循环每一项数据显示新闻 -->
+	<block wx:for="{{newsList}}">
+		<!-- 普通新闻 -->
+		<block wx:if="{{item.type == 1}}">
+			<normal-news newsItem="{{item}}" class="news-item normal-news" />
+		</block>
+		<!-- 视频 -->
+		<block wx:elif="{{item.type == 2}}">
+			<video-news newsItem="{{item}}" class="news-item video-news" />
+		</block>
+		<!-- 多图 -->
+		<block wx:elif="{{item.type == 3}}">
+			<multi-image newsItem="{{item}}" class="news-item multi-image" />
+		</block>
+	</block>
+</view>
+<view class="foot">
+	没有更多了哦
+</view>
+

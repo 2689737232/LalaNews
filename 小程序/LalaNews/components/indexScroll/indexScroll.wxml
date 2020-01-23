@@ -1,0 +1,22 @@
+<!-- 顶部标签滚动条 -->
+<view class="cantainer">
+	<scroll-view
+	 class="scroll-view"
+	 scroll-x="true"
+	 scroll-y="true"
+	 scroll-left="{{}}"
+	 enable-back-to-top="trues"
+	 scroll-with-animation="true"
+	>
+		<view
+		 wx:key="{{item}}"
+		 wx:for="{{tagArr}}"
+		 data-index="{{index}}"
+		 data-tagId="{{item.tagId}}"
+		 bind:tap="scollItemClick"
+		 class="scroll-item {{ selectTagIndex == index ? 'active': ''}}"
+		>{{item.tagName}}
+		</view>
+	</scroll-view>
+</view>
+

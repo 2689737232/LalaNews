@@ -1,0 +1,45 @@
+<view class="search-container">
+	<scroll-view
+	 class=""
+	 scroll-y="true"
+	 upper-threshold="50"
+	 lower-threshold="50"
+	 scroll-top="0"
+	 scroll-left="0"
+	 scroll-into-view=""
+	 scroll-with-animation="false"
+	 enable-back-to-top="true"
+	>
+		<view class="search-box">
+			<image class="search-icon" src="/src/image/搜索2.png" bind:tap="" />
+			<input type="text" class="search-input" placeholder="搜索一下">576</input>
+		</view>
+		<view class="already-add">
+			<view class="already-add-text">已经添加</view>
+			<block wx:for="{{alreadyAdd}}" wx:key="{{item.tagId}}">
+				<view class="already-add-item">
+					<text class="item-name">{{item.name}}</text>
+					<text class="cancel-btn" data-index="{{index}}" bind:tap="cancelItem">取消</text>
+				</view>
+			</block>
+		</view>
+		<view class="recommend-list-box">
+			<view class="recommend-list-text">推荐</view>
+			<view class="recommend-list-wrapper">
+				<block wx:for="{{recommendList}}" wx:key="{{item.tagId}}">
+					<view
+					 data-index="{{index}}"
+					 data-item="{{item}}"
+					 bind:tap="itemTap"
+					 bind:touchend="itemTouchEnd"
+					 bind:touchstart="itemTouchStart"
+					 class="recommend-list-item {{touchIndex == index ? 'active' : '' }}"
+					>{{item.name}}
+					</view>
+				</block>
+			</view>
+		</view>
+	</scroll-view>
+</view>
+<view class="foot" />
+

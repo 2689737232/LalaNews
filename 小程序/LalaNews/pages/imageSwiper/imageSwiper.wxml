@@ -1,0 +1,21 @@
+<view class="container">
+	<view class="base-view" catchtap="back" />
+	<swiper
+	 class="swiper-image"
+	 indicator-dots="true"
+	 indicator-color="rgba(0,0,0,.3)"
+	 current="{{selcetIndex}}"
+	 duration="1000"
+	 previous-margin="false"
+	 current="{{imageIndex}}"
+	 display-multiple-items="1"
+	 skip-hidden-item-layout="false"
+	 bindchange=""
+	 bindanimationfinish=""
+	>
+		<swiper-item wx:for="{{images}}" class="swiper-item" item-id="item">
+			<image class="image-item" src="{{item}}" />
+		</swiper-item>
+	</swiper>
+</view>
+

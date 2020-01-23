@@ -1,0 +1,8 @@
+<view class="comment-container">
+	<view class="commetn-line" />
+	<view class="comment-title">评论</view>
+	<block wx:for="{{commentList}}" wx:key="{{item.commentId}}">
+		<comment-item bind:showReview="showReview" commentItem="{{item}}" />
+	</block>
+</view>
+

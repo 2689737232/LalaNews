@@ -1,0 +1,11 @@
+.wrapper{
+  height: max-content;
+  padding-top: 40rpx;
+}
+.top-tag{
+   width: 100%;
+   position: fixed;
+   background-color: white;
+   top: 0;
+   z-index: 99;
+}

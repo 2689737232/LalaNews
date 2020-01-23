@@ -1,0 +1,52 @@
+.wrapper {
+    width: 100%;
+    height: 380rpx;
+    box-sizing: border-box;
+    padding: 15rpx 5rpx;
+}
+
+.image-wrapper {
+    box-sizing: border-box;
+    height: 200rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-image {
+    flex: 0 0 32%;
+    height: 100%;
+}
+
+.text-box {
+    max-height: 80rpx;
+    font-size: 30rpx;
+    word-spacing: 15rpx;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bottom-box {
+    height: 80rpx;
+}
+
+.author {
+    font-size: 25rpx;
+    color: #000;
+}
+
+.item {
+    margin-bottom: 10rpx;
+}
+
+.item:last-of-type {
+    margin-bottom: 0rpx;
+}
+
+.border {
+    height: 3rpx;
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+}

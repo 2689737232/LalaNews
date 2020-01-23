@@ -1,0 +1,5 @@
+<view class="wrapper">
+	<index-scroll tagArr="{{tagArr}}" class="top-tag" />
+	<index-list class="newsList" newsList="{{newsList}}" />
+</view>
+

@@ -1,0 +1,17 @@
+<view class="container">
+	<view class="image-grounp">
+		<image
+		 wx:for="{{newsItem.images}}"
+		 class="image-item"
+		 src="{{item}}"
+		 lazy-load="false"
+		 data-index="{{index}}"
+		 bind:tap="imageItemClick"
+		/>
+	</view>
+	<view class="description-wrapper">
+		<text class="author">{{newsItem.authorName}}</text>
+		<text class="description">{{newsItem.title}}</text>
+	</view>
+</view>
+

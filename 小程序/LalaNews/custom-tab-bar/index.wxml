@@ -1,0 +1,16 @@
+<cover-view class="container">
+	<cover-view
+	 class="{{selectIndex == index ? 'active' : ''}} tab-item"
+	 wx:for="{{tabArray}}"
+	 wx:for-index="index"
+	 wx:for-item="item"
+	 bind:tap="tabItemTap"
+	 data-index="{{index}}"
+	 data-url="{{item.path}}"
+	 wx:key="{{item.id}}"
+	>
+		<cover-image class="tab-item-img" src="{{index==selectIndex ? item.selectIcon : item.icon}}" />
+		<cover-view class="tab-item-text" scroll-top="0">{{item.name}}</cover-view>
+	</cover-view>
+</cover-view>
+

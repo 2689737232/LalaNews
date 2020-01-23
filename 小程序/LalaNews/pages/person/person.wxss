@@ -1,0 +1,50 @@
+.me-container {
+    position: relative;
+}
+
+.top-xob {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 450rpx;
+    background-image: linear-gradient(#0572CD, #C5F1E9);
+    justify-content: center;
+    align-items: center;
+}
+.setting-item{
+    margin: 20rpx;
+    box-sizing: border-box;
+    color: black;
+    text-align: left;
+    font-size: 30rpx;
+    padding: 30rpx 0 30rpx 40rpx;
+    width: 95%;
+    background-color: whitesmoke;
+}
+.tip-box {
+    position: absolute;
+    top: 100%;
+    margin-top: 70rpx;
+    width: 100%;
+    text-align: center;
+}
+.arrows{
+    margin-left: 70%;
+    height: 20rpx;
+    width: 20rpx;
+}
+.user-box{
+    width: 70%;
+    height: 120rpx;
+    display: flex;
+}
+.user-icon{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+}
+.user-name{
+    color: white;
+    font-size: 35rpx;
+    margin-left: 20rpx;
+}

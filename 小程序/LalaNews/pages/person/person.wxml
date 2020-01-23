@@ -1,0 +1,34 @@
+<view class="me-container">
+	<view class="top-xob">
+		<!--
+		获取小程序用户的信息 
+		open-type="getUserInfo"
+		 open-type="getPhoneNumber"
+	 -->
+		<button
+		 wx:if="{{!isLoging}}"
+		 class="login-btn"
+		 bind:tap="login"
+		 open-type="getUserInfo"
+		 open-type="getPhoneNumber"
+		>
+			登录
+		</button>
+		<view class="user-box" wx:if="{{isLoging}}">
+			<image class="user-icon" src="{{userIcon}}" />
+			<text class="user-name">
+                {{userName}}
+            </text>
+		</view>
+	</view>
+	<view class="setting-item" bind:tap="permissionSetting">
+		权限设置
+		<image class="arrows" src="/src/image/箭头.png" />
+	</view>
+	<view wx:if="{{isLoging}}" class="setting-item" bind:tap="myLove">
+		我的收藏
+		<image class="arrows" src="/src/image/箭头.png" />
+	</view>
+	<view class="tip-box" wx:if="{{!isLoging}}">您似乎还没有登录呢</view>
+</view>
+

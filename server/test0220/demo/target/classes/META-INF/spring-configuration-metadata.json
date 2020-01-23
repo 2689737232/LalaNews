@@ -1,0 +1,32 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "cn.xiaohaimao.po.Person",
+      "name": "person",
+      "type": "cn.xiaohaimao.po.Person"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "cn.xiaohaimao.po.Person",
+      "name": "person.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "cn.xiaohaimao.po.Person",
+      "name": "person.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.xiaohaimao.po.Person",
+      "name": "person.p-arr",
+      "type": "java.util.List<java.lang.Object>"
+    },
+    {
+      "sourceType": "cn.xiaohaimao.po.Person",
+      "name": "person.p-set",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>"
+    }
+  ]
+}

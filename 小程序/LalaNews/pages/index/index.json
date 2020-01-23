@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "index-scroll": "../../components/indexScroll/indexScroll",
+    "index-list": "../../components/indexList/indexList"
+  }
+}

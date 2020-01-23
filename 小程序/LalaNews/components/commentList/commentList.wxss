@@ -1,0 +1,17 @@
+.comment-container {
+    width: 100%;
+    min-height: 150rpx;
+}
+
+.commetn-line {
+    background-color: rgb(131, 131, 131);
+    width: 100%;
+    height: 7rpx;
+}
+
+.comment-title {
+    padding-top: 5rpx;
+    width: 100%;
+    font-size: 35rpx;
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "normal-news": "../normalNews/normalNews",
+    "video-news": "../videoNews/videoNews",
+    "multi-image": "../multiImage/multiImage"
+  }
+}

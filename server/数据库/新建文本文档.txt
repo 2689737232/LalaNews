@@ -1,0 +1,6 @@
+select *,GROUP_CONCAT(i.image_url SEPARATOR '||') AS images
+from news as n,news_images as ni,image as i,author as a
+where n.news_id in (
+    select tn.news_id from tag as t,tag_news as tn
+    where t.tag_id = tn.tag_id and t.tag_id = 100000001
+) and n.news_id = ni.news_id and a.author_id = n.author_id and ni.image_id = i.image_id

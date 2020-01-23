@@ -1,0 +1,65 @@
+<view class="container-comment-item">
+	<!-- 主评论区域 -->
+	<!-- 绑定用户回复评论事件 -->
+	<view
+	 class="comment-main"
+	 data-commentId="{{commentItem.commentId}}"
+	 data-username="{{commentItem.name}}"
+	 bind:tap="review"
+	>
+		<view class="left-user-icon">
+			<image class="comment-user-icon" src="{{commentItem.icon}}" />
+		</view>
+		<view class="right-comment-box">
+			<text class="user-name">{{commentItem.name}}</text>
+			<text class="user-comment">{{commentItem.comment}}</text>
+		</view>
+	</view>
+	<!--  每一个评论的子列表 -->
+	<view class="commetn-children-list ">
+		<!-- 只渲染3行，超出显示查看更多 -->
+		<block wx:for="{{commentItem.chirden.length > 3? [commentItem.chirden[0],commentItem.chirden[1],commentItem.chirden[2]] : commentItem.chirden}}" wx:key="item.commentId">
+			<view
+			 class="commetn-row"
+			 data-commentId="{{item.commentId}}"
+			 data-username="{{item.name}}"
+			 bind:tap="review"
+			>
+				<text class="commetn-item-userName" space="ensp">{{item.name}}:</text>
+				<block wx:if="{{item.parentId && item.parentId != commentItem.commentId}}">
+					<text class="commetn-item-reply" space="ensp">@{{item.parentName}}</text>
+				</block>
+				<text class="commetn-content">{{item.comment}}</text>
+			</view>
+		</block>
+		<!-- 如果用户点击了显示更多，渲染剩余的评论列表 -->
+		<block wx:if="{{isShowMore}}">
+			<block wx:for="{{moreComment}}" wx:key="item.commentId">
+				<view
+				 class="commetn-row"
+				 data-commentId="{{item.commentId}}"
+				 data-username="{{item.name}}"
+				 bind:tap="review"
+				>
+					<text class="commetn-item-userName" space="ensp">{{item.name}}:</text>
+					<block wx:if="{{item.parentId && item.parentId != commentItem.commentId}}">
+						<text class="commetn-item-reply" space="ensp">@{{item.parentName}}</text>
+					</block>
+					<text class="commetn-content">{{item.comment}}</text>
+				</view>
+			</block>
+		</block>
+		<!-- 显示更多按钮 -->
+		<view
+		 wx:if="{{commentItem.chirden.length>3}}"
+		 class="commetn-row-more"
+		 data-moreChirden="{{commentItem.chirden}}"
+		 bind:tap="showMore"
+		>
+			<view class="commetn-text-more" space="ensp">
+				{{moreText + "" + (commentItem.chirden.length - 3) +"条 "+ moreSymbol }}
+			</view>
+		</view>
+	</view>
+</view>
+

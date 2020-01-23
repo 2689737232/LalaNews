@@ -1,0 +1,149 @@
+page {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 35rpx;
+}
+
+.container-newsDatail {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    padding: 20rpx 15rpx;
+    display: inline-block;
+    height: auto;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.author-box {
+    box-sizing: border-box;
+    padding: 0 30rpx;
+    display: flex;
+    width: 100%;
+    height: 100rpx;
+    /* background-color: brown; */
+}
+
+.icon,
+.right-box {
+    height: 100%;
+}
+
+.icon {
+    box-sizing: border-box;
+    border-radius: 50%;
+    flex: 0 0 15%;
+}
+
+.right-box {
+    box-sizing: border-box;
+    flex: 0 0 75%;
+    padding-left: 15rpx;
+}
+
+.author {
+    width: 100%;
+    margin-top: 10rpx;
+    font-size: 30rpx;
+}
+
+.time-box {
+    margin-top: 15rpx;
+    font-size: 25rpx;
+    color: rgb(160, 160, 160);
+}
+
+.news-description-box {
+    padding: 20rpx 20rpx;
+}
+
+.paragraph {
+    letter-spacing: 3rpx;
+    font-size: 35rpx;
+}
+
+.content-image {
+    padding: 15rpx 0;
+    width: 100%;
+}
+
+.bottom-comment {
+    position: relative;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 80rpx;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.right-like,
+.left-comment {
+    height: 100%;
+    flex: 0 0 50%;
+}
+
+.comment-icon {
+    transform: translateY(10rpx);
+    height: 60%;
+    width: 15%;
+}
+
+.middle-line {
+    box-sizing: border-box;
+    position: absolute;
+    height: 80%;
+    width: 2rpx;
+    background-color: black;
+}
+
+.foot {
+    height: 300rpx;
+    width: 100%;
+}
+
+
+.share-box {
+    width: 100%;
+}
+.share {
+    border-radius: 45rpx;
+    background-color: #F2F2F2;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20rpx 15rpx;
+    margin-left: 60%;
+    margin-bottom: 15rpx;
+    width: 30%;
+    font-size: 35rpx;
+}
+.share-image{
+    height: 50rpx;
+    width: 50rpx;
+}
+.input-wrapper{
+    position: fixed;
+    bottom: 80rpx;
+    width: 100%;
+    z-index: 99999;
+    /* background-color: rgba(245, 245, 220, 0.521); */
+}
+.input-box{
+    text-indent: 5rpx;
+}
+
+.input-review{
+    text-indent: 10rpx;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10rpx;
+}

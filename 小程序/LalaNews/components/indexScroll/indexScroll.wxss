@@ -1,0 +1,20 @@
+.cantainer{
+    width: 100%;
+    background-color: white;
+}
+.scroll-view {
+    padding: 5rpx;
+    height: 60rpx;
+    white-space: nowrap;
+}
+
+.scroll-item {
+    font-size: 30rpx;
+    margin: 0 20rpx;
+    display: inline-block;
+}
+
+.scroll-item.active {
+    color: red;
+    font-size: 35rpx;
+}

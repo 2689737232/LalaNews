@@ -1,0 +1,14 @@
+<view class="container">
+	<!-- <view class="mask" /> -->
+	<video
+	 class="news-video"
+	 src="{{newsItem.videoUrl}}"
+	 controls="true"
+	 show-center-play-btn="true"
+	 show-mute-btn="true"
+	 page-gesture="true"
+	 initial-time="0"
+	/>
+	<!-- <image class="play-icon" src="{{playIcon}}" bind:tap="playIconClick" /> -->
+</view>
+

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "recommend-news": "/components/recommendNews/recommendNews",
+    "comment-list": "/components/commentList/commentList"
+  }
+}

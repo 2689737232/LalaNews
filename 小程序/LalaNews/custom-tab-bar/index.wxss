@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    height: 110rpx;
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-item {
+    padding: 2rpx;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 110rpx;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(242, 242, 242, 0.712);
+}
+
+.tab-item-img {
+    margin: 5rpx;
+    margin-top: 5rpx;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 18%;
+    height: 45%;
+}
+
+.tab-item-text {
+    font-size: 25rpx;
+    margin-top: 10rpx;
+}
+
+.tab-item.active .tab-item-text {
+    color: #0572CD;
+}
+
+.tab-item.active .tab-item-img {
+    width: 23%;
+    height: 52%;
+    /* transition: 0.2s cubic-bezier(0.69, 0.1, 0.6, 1.77); */
+}
