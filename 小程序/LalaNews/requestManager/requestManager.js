@@ -311,84 +311,83 @@ function getNewsDetailById(newsId) {
   })
 }
 // 获取推荐标签列表
-function getRecommendList() {
+function getRecommendList(start,end) {
   // 基本url
   const urlObj = baseObj.urlObj;
-  const _url = urlObj.recommendList;
-
+  const _url = urlObj.getSearchTagList + start + "/" + end;
   return new Promise((res, rej) => {
     // 请求newsDetail
-    // wx.request({
-    //     url: _url,
-    //     method: "GET",
-    //     dataType: JSON,
-    //     success(r) {
-    //         let data = JSON.parse(r.data);
-    //         res(data)
-    //     },
-    //     fail(e) {
-    //         console.log(e);
-    //         rej(e);
-    //     }
-    // })
-    let recommendList = {
-      status: "ok",
-      msg: {
-        data: {
-          recommendList: [
-            {
-              tagId: 500004,
-              name: "教育"
-            },
-            {
-              tagId: 500005,
-              name: "房产"
-            },
-            {
-              tagId: 500006,
-              name: "儿童"
-            },
-            {
-              tagId: 500007,
-              name: "漫画"
-            },
-            {
-              tagId: 500008,
-              name: "足球"
-            },
-            {
-              tagId: 500009,
-              name: "科学"
-            },
-            {
-              tagId: 500010,
-              name: "动漫"
-            },
-            {
-              tagId: 500011,
-              name: "图片"
-            },
-            {
-              tagId: 500012,
-              name: "游戏"
-            },
-            {
-              tagId: 500013,
-              name: "国际"
-            },
-            {
-              tagId: 500014,
-              name: "颜色"
-            },
-            {
-              tagId: 500015,
-              name: "时尚"
-            },
-          ]
+    wx.request({
+        url: _url,
+        method: "GET",
+        dataType: JSON,
+        success(r) {
+            let data = JSON.parse(r.data);
+            res(data)
+        },
+        fail(e) {
+            console.log(e);
+            rej(e);
         }
-      }
-    }
-    res(recommendList);
+    })
+    // let recommendList = {
+    //   status: "ok",
+    //   msg: {
+    //     data: {
+    //       recommendList: [
+    //         {
+    //           tagId: 500004,
+    //           name: "教育"
+    //         },
+    //         {
+    //           tagId: 500005,
+    //           name: "房产"
+    //         },
+    //         {
+    //           tagId: 500006,
+    //           name: "儿童"
+    //         },
+    //         {
+    //           tagId: 500007,
+    //           name: "漫画"
+    //         },
+    //         {
+    //           tagId: 500008,
+    //           name: "足球"
+    //         },
+    //         {
+    //           tagId: 500009,
+    //           name: "科学"
+    //         },
+    //         {
+    //           tagId: 500010,
+    //           name: "动漫"
+    //         },
+    //         {
+    //           tagId: 500011,
+    //           name: "图片"
+    //         },
+    //         {
+    //           tagId: 500012,
+    //           name: "游戏"
+    //         },
+    //         {
+    //           tagId: 500013,
+    //           name: "国际"
+    //         },
+    //         {
+    //           tagId: 500014,
+    //           name: "颜色"
+    //         },
+    //         {
+    //           tagId: 500015,
+    //           name: "时尚"
+    //         },
+    //       ]
+    //     }
+    //   }
+    // }
+    // res(recommendList);
   })
 
 

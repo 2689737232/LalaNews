@@ -14,6 +14,8 @@
         <module>zuul</module>
         <module>Zuul</module>
         <module>CommentServer</module>
+        <module>SearchServer</module>
+        <module>UserServer</module>
     </modules>
 
     <groupId>cn.edu.cqcet.teamlala.lalanews</groupId>

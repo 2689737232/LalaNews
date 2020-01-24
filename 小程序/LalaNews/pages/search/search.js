@@ -9,19 +9,21 @@ Page({
     alreadyAdd: [
       {
         tagId: 500001,
-        name: "美食"
+        tagName: "美食"
       },
       {
         tagId: 500002,
-        name: "科技"
+        tagName: "科技"
       },
       {
         tagId: 500003,
-        name: "军事"
+        tagName: "军事"
       },
     ],
     recommendList: [],
-    touchIndex: null
+    touchIndex: null,
+    start: 0,
+    end: 9
   },
 
   /**
@@ -29,9 +31,10 @@ Page({
    */
   onLoad: function (options) {
     let self = this;
-    let resultPromisse = getRecommendList();
+    let resultPromisse = getRecommendList(0,9);
     resultPromisse.then((res) => {
-      let recommendList = res.msg.data.recommendList;
+      console.log(res);
+      let recommendList = res.msg.data;
       self.setData({
         recommendList: recommendList
       })

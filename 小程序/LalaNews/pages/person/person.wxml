@@ -10,7 +10,6 @@
 		 class="login-btn"
 		 bind:tap="login"
 		 open-type="getUserInfo"
-		 open-type="getPhoneNumber"
 		>
 			登录
 		</button>

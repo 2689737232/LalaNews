@@ -9,6 +9,10 @@ const devURL = "http://	192.168.56.1:8888/";
 const getTagList = devURL + "tag/getTag/";
 const getNewsListByTagIdTest = "http://	192.168.56.1:8050/news-server/news/getNewsListByTagId/";
 const getNewsDetail = "http://192.168.56.1:8050/news-server/newsDetail/getNewsDetail/";
+// 获取搜索区域推荐的标签列表
+const getSearchTagList = "http://192.168.56.1:8050/search-server/search/getSearchTagList/";
+// 添加用户
+const addUser = "http://192.168.56.1:8050/user-server/user/getUserByOpenId/";
 const urlObj = {
     baseURL,
     tagNewsList,
@@ -17,7 +21,9 @@ const urlObj = {
     devURL,
     getTagList,
     getNewsListByTagIdTest,
-    getNewsDetail
+    getNewsDetail,
+    getSearchTagList,
+    addUser
 }
 
 module.exports = {

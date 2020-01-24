@@ -18,7 +18,7 @@
 			<view class="already-add-text">已经添加</view>
 			<block wx:for="{{alreadyAdd}}" wx:key="{{item.tagId}}">
 				<view class="already-add-item">
-					<text class="item-name">{{item.name}}</text>
+					<text class="item-name">{{item.tagName}}</text>
 					<text class="cancel-btn" data-index="{{index}}" bind:tap="cancelItem">取消</text>
 				</view>
 			</block>
@@ -34,7 +34,7 @@
 					 bind:touchend="itemTouchEnd"
 					 bind:touchstart="itemTouchStart"
 					 class="recommend-list-item {{touchIndex == index ? 'active' : '' }}"
-					>{{item.name}}
+					>{{item.tagName}}
 					</view>
 				</block>
 			</view>

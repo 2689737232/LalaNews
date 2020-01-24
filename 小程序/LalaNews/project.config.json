@@ -79,6 +79,7 @@
 					"id": -1,
 					"name": "搜索",
 					"pathName": "pages/search/search",
+					"query": "",
 					"scene": null
 				}
 			]

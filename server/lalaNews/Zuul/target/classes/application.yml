@@ -18,5 +18,11 @@ zuul:
       path: /tag-server/**   # 所有访问/news/**的请求都会转发使用到NewsServer
       service-id: TagServer   #eurka中的服务名
     comment-serviceId:
-      path: /comment-server/**   # 所有访问/news/**的请求都会转发使用到NewsServer
-      service-id: CommentServer   #eurka中的服务名
+      path: /comment-server/**
+      service-id: CommentServer
+    search-serviceId:
+      path: /search-server/**
+      service-id: SearchServer
+    user-serviceId:
+      path: /user-server/**
+      service-id: UserServer

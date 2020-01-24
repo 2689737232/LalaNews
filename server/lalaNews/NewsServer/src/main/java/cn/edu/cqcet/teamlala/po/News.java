@@ -11,7 +11,7 @@ public class News implements Serializable {
     private String title;
     private List<String> images;
     private String videoUrl;
-    private Integer authorId;
+    private Long authorId;
     private String authorName;
     private Date createTime;
     private Date updateTime;
@@ -56,11 +56,11 @@ public class News implements Serializable {
         this.videoUrl = videoUrl;
     }
 
-    public Integer getAuthorId() {
+    public Long getAuthorId() {
         return authorId;
     }
 
-    public void setAuthorId(Integer authorId) {
+    public void setAuthorId(Long authorId) {
         this.authorId = authorId;
     }
 

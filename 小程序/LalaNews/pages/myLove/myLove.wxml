@@ -1,12 +1,7 @@
 <view class="mylove-container">
-	<view class="mylove-item">
-		第一项收藏
+	<view wx:if="{{openId}}">
+		用户的openid：{{openId}}
 	</view>
-	<view class="mylove-item">
-		第二项收藏
-	</view>
-	<view class="mylove-item">
-		第三项收藏
-	</view>
+
 </view>
 

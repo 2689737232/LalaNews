@@ -1,13 +1,14 @@
 // pages/person/person.js
+const urlObj = require("../../requestManager/base.js").urlObj;
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
     isLoging: false,
     userIcon: null,
-    userName: null
+    userName: null,
+    openId: null
   },
 
   /**
@@ -24,16 +25,39 @@ Page({
         // 如果用户有授权，登录获取用户信息
         if (res.authSetting["scope.userInfo"]) {
           self._getUserInfo();
+          // 获取用户openID
+          self.getUserOpenId();
         }
       }
     });
+  },
+  // 获取用户的openId
+  getUserOpenId() {
+    const self = this;
+    wx.login({
+      success(res) {
+        // console.log(res);
+        let code = res.code;
+        // 获取用户id请求url
+        const url = "https://api.weixin.qq.com/sns/jscode2session?appid=wx19ffc3b13177e5ef&secret=beb3167469169ebc73c8ca3ecf2a0c9e&js_code=" + code + "&grant_type=authorization_code";
+        wx.request({
+          url: url, //仅为示例，并非真实的接口地址
+          success(res) {
+            console.log(res);
+            self.setData({
+              openId: res.data.openid
+            })
+          }
+        })
+      }
+    })
   },
   // 提前发起提示，获取用户权限
   tipUserGetInfo(_scope) {
     wx.authorize({
       scope: _scope,
       success(res) {
-        console.log(res);
+        // console.log(res.userInfo.avatarUrl);
       }
     })
   },
@@ -42,7 +66,7 @@ Page({
     let self = this;
     wx.getUserInfo({
       success(res) {
-        console.log(res);
+        // 获取用户昵称和头像url
         let userIcon = res.userInfo.avatarUrl,
           userName = res.userInfo.nickName;
         self.setData({
@@ -50,6 +74,7 @@ Page({
           userIcon: userIcon,
           userName: userName
         })
+        
       }
     })
   },
@@ -69,9 +94,30 @@ Page({
   // 我的收藏
   myLove() {
     // url需要添加参数： 用户的id
-    let url = "/pages/myLove/myLove";
+    let url = "/pages/myLove/myLove?openId=" + this.data.openid;
     wx.navigateTo({
       url: url,
+    }),
+    // 发送user的信息到后台判断是否是新用户
+    this.sendUserInfo2Server();
+  },
+  //发送用户信息到后台，判断添加新用户
+  sendUserInfo2Server() {
+    let userName = this.data.userName,
+      userIcon = this.data.userIcon,
+      userOpenId = this.data.openId;
+    console.log(userName, userIcon, userOpenId);
+    const url = urlObj.addUser 
+    wx.request({
+      url: url, //仅为示例，并非真实的接口地址
+      data:{
+        userName: userName,
+        userIcon: userIcon,
+        openId: userOpenId
+      },
+      success(res) {
+        console.log("添加成功过");
+      }
     })
   },
   /**

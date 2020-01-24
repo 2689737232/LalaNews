@@ -5,16 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    openId: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let openId = options.openId;
+    this.setData({
+      openId: openId
+    })
   },
-
+  // 获取用户的收藏新闻列表
+  getUserLoveList(){
+     
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

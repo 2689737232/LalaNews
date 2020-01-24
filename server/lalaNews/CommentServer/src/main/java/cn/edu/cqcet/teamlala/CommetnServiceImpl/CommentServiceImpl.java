@@ -13,7 +13,6 @@ import java.util.List;
 public class CommentServiceImpl implements CommentService {
     @Autowired
     private CommentMapper commentMapper;
-
     @Override
     public List<Comment> getCommentsByNewsId(Integer newsId) {
         List<Comment> comments = new ArrayList<>();
@@ -26,7 +25,6 @@ public class CommentServiceImpl implements CommentService {
         List<Comment> result = this.getParentList(comments);
         return result;
     }
-
     // 通过parentId获取父级名字
     @Override
     public String getParentName(Integer parentId) {

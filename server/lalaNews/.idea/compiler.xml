@@ -10,7 +10,9 @@
         <module name="EruekaServer" />
         <module name="JSON" />
         <module name="NewsServer" />
+        <module name="SearchServer" />
         <module name="TagServer" />
+        <module name="UserServer" />
         <module name="Zuul" />
       </profile>
     </annotationProcessing>
