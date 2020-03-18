@@ -25,6 +25,6 @@ public interface CommentMapper {
 
     // 获取每一个评论的parentName
     @Select("select u.user_name as parentNam\n" +
-            "from comment as c,user as u where u.id = c.user_id and c.parent_id = #{parentId};")
+            "from comment as c,user as u where u.id = c.user_id and c.comment_id = #{parentId};")
     String getParentName(Integer parentId);
 }

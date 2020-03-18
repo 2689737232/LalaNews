@@ -1,7 +1,0 @@
-server:
-  port: 8081
-person:
-  name: "我是啦啦"
-  age: 18
-  p_map: {a: 15,b: 45}
-  p_arr: [45,78,93]

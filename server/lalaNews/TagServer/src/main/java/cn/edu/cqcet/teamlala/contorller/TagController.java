@@ -21,7 +21,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/tag")
-public class TagControlle {
+public class TagController {
     @Autowired
     TagServer tagServer;
 

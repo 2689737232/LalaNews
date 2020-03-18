@@ -22,11 +22,15 @@ public interface NewsDetailMapper {
             "where nd.news_id = #{newsId}\n" +
             "  and nd.author_id = a.author_id;")
     NewsDetail getNewsDetailByNewsId(Integer newsId);
-    // 通过newsId获取新闻的文章内容
+    // 通过newsId获取新闻的文章内容，段落
     @Select("select\n" +
             "       cp.paragraph_text,cp.position,cp.paragraph_text,cp.image_url,cp.paragraph_type\n" +
             "from\n" +
             "     content_paragraph as cp\n" +
-            "where  cp.news_id = #{newsId};")
+            "where  cp.news_id = #{newsId}\n " +
+            "order by position")
     List<Paragraph> getContentByNewsId(Integer newsId);
+    // 通过新闻id获取评论数量
+    @Select("select count(comment_id) from comment where comment.news_id = #{newsId};")
+    int  getCommentNumber(Integer newsId);
 }

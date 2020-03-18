@@ -9,7 +9,7 @@ import java.util.List;
 
 @Mapper
 public interface TagMapper {
-    @Select("select * from tag limit #{num}")
+    @Select("select * from tag limit #{num},9")
     List<Tag> getTagList(int num);
     @Select("select * from tag where tag_id limit 0,3")
     List<Tag> getTagListNormal();

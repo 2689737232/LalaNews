@@ -1,5 +1,7 @@
 package cn.edu.cqcet.teamlala.po;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -13,7 +15,9 @@ public class News implements Serializable {
     private String videoUrl;
     private Long authorId;
     private String authorName;
+    @JsonFormat( pattern="yyyy-MM-dd HH:mm:ss")
     private Date createTime;
+    @JsonFormat( pattern="yyyy-MM-dd HH:mm:ss")
     private Date updateTime;
 
     public Integer getNewsId() {

@@ -3,7 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CommentServer" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/EruekaServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EurekaServer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JSON" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NewsServer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SearchServer" charset="UTF-8" />

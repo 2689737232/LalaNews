@@ -8,4 +8,5 @@ import java.util.List;
 public interface NewsDetailService {
     NewsDetail getNewsDetailByNewsId(Integer newsId);
     List<Paragraph> getContentByNewsId(Integer newsId);
+    int getCommentNumber(Integer newsId);
 }

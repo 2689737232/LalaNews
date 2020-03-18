@@ -23,8 +23,8 @@ public class NewsController {
 
     // 通过tagId获取相应的newsId列表
     @RequestMapping("/getNewsIdListByTagId/{tagId}/{start}/{end}")
-    public List<Integer> getNewsIdListByTagId(@PathVariable("tagId") Integer tagId,@PathVariable("start") int start,@PathVariable("end") int end) {
-        newsIds = this.newsService.getNewsIdListByTagId(tagId, start,end);
+    public List<Integer> getNewsIdListByTagId(@PathVariable("tagId") Integer tagId, @PathVariable("start") int start, @PathVariable("end") int end) {
+        newsIds = this.newsService.getNewsIdListByTagId(tagId, start, end);
         return newsIds;
     }
 
@@ -33,13 +33,14 @@ public class NewsController {
     public News getNewsByNewsId(@PathVariable("newsId") Integer newsId) {
         return this.newsService.getNewsByNewsId(newsId);
     }
+
     // 通过tagId获取对应的newsList
     @RequestMapping("/getNewsListByTagId/{tagId}/{start}/{end}")
-    public MyJson getNewsListByTagId(@PathVariable("tagId") Integer tagId, @PathVariable("start") int start,@PathVariable("end") int end) {
-        if (end - start > 10){
+    public MyJson getNewsListByTagId(@PathVariable("tagId") Integer tagId, @PathVariable("start") int start, @PathVariable("end") int end) {
+        if (end - start > 10) {
             end = start + 10;
         }
-        List<Integer> idList = this.newsService.getNewsIdListByTagId(tagId, start,end);
+        List<Integer> idList = this.newsService.getNewsIdListByTagId(tagId, start, end);
         List<News> newsList = new ArrayList<>();
         // 循环id列表获取新闻
         for (Integer id : idList) {
@@ -51,12 +52,27 @@ public class NewsController {
             List<NewsImage> newsImageList = new ArrayList<>();
             newsImageList = this.newsService.getImagesByNewsId(id);
             // 循环添加图片链接到每一项新闻对象的images中
-            for(NewsImage newsImage : newsImageList){
+            for (NewsImage newsImage : newsImageList) {
                 news.getImages().add(newsImage.getImageUrl());
             }
             newsList.add(news);
         }
         // 返回自定义json
         return JsonFormat.ok(newsList);
+    }
+
+    // 通过新闻id获取用户收藏新闻
+    @RequestMapping("/getCollectNewsByNewsId/{newsId}")
+    public News getCollectNewsByNewsId(@PathVariable("newsId") Integer newsId) {
+        News news = new News();
+        news = this.newsService.getNewsByNewsId(newsId);
+        List<NewsImage> newsImages = new ArrayList<>();
+        newsImages =  this.newsService.getImagesByNewsId(newsId);
+        news.setImages(new ArrayList<>());
+        // 循环添加图片链接到每一项新闻对象的images中
+        for (NewsImage newsImage : newsImages) {
+            news.getImages().add(newsImage.getImageUrl());
+        }
+        return news;
     }
 }

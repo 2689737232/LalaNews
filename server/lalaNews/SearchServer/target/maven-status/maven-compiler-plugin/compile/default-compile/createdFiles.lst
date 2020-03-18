@@ -1,0 +1,5 @@
+cq\edu\cqcet\lalateam\controller\SearchController.class
+cq\edu\cqcet\lalateam\service\SearchService.class
+cq\edu\cqcet\lalateam\SearchApplication.class
+cq\edu\cqcet\lalateam\mapper\SearchMapper.class
+cq\edu\cqcet\lalateam\serviceImpl\ServiceImpl.class

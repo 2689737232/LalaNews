@@ -13,10 +13,13 @@ import java.util.List;
 public class CommentServiceImpl implements CommentService {
     @Autowired
     private CommentMapper commentMapper;
+    // 通过新闻id获取本新闻的所有评论
     @Override
     public List<Comment> getCommentsByNewsId(Integer newsId) {
+        // 获取主评论
         List<Comment> comments = new ArrayList<>();
         comments = commentMapper.getCommentsByNewsId(newsId);
+        // 循环获取每一条评论的子评论
         for(Comment comment: comments){
             String parentName = this.commentMapper.getParentName(comment.getParentId());
             System.out.println(parentName);

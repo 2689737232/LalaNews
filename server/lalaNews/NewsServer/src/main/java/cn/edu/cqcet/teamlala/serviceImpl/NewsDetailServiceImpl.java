@@ -22,4 +22,9 @@ public class NewsDetailServiceImpl implements NewsDetailService {
     public List<Paragraph> getContentByNewsId(Integer newsId) {
         return this.newsDetailMapper.getContentByNewsId(newsId);
     }
+
+    @Override
+    public int getCommentNumber(Integer newsId) {
+        return this.newsDetailMapper.getCommentNumber(newsId);
+    }
 }

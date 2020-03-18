@@ -1,0 +1,6 @@
+cn\edu\cqcet\teamlala\service\CommentService.class
+cn\edu\cqcet\teamlala\controller\CommentController.class
+cn\edu\cqcet\teamlala\CommentApplication.class
+cn\edu\cqcet\teamlala\po\Comment.class
+cn\edu\cqcet\teamlala\mapper\CommentMapper.class
+cn\edu\cqcet\teamlala\CommetnServiceImpl\CommentServiceImpl.class

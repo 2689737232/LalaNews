@@ -1,5 +1,7 @@
 package cn.edu.cqcet.teamlala.po;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -12,6 +14,7 @@ public class Comment implements Serializable {
     private String icon;
     private String comment;
     private Integer parentId;
+    @JsonFormat( pattern="yyyy-MM-dd HH:mm:ss")
     private Date date;
     private List<Comment> chirden;
     private Integer ancestorId;

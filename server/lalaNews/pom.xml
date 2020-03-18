@@ -7,12 +7,9 @@
     <modules>
         <module>TagServer</module>
         <module>JSON</module>
-        <module>Erueka-Server</module>
-        <module>EruekaServer</module>
+        <module>EurekaServer</module>
         <module>NewsServer</module>
-        <module>Hystrix</module>
         <module>zuul</module>
-        <module>Zuul</module>
         <module>CommentServer</module>
         <module>SearchServer</module>
         <module>UserServer</module>
@@ -100,6 +97,11 @@
                 <artifactId>spring-cloud-starter-zuul</artifactId>
                 <version>1.4.7.RELEASE</version>
             </dependency>
+            <dependency>
+                <groupId>cn.edu.cqcet.teamlala.lalanews</groupId>
+                <artifactId>JSON</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
@@ -107,6 +109,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- 本地依赖需要添加这段话，不然打包出来的jar包不会被本地其他项目依赖  -->
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
             </plugin>
         </plugins>
     </build>

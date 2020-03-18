@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CommentServer" />
-        <module name="EruekaServer" />
+        <module name="EurekaServer" />
         <module name="JSON" />
         <module name="NewsServer" />
         <module name="SearchServer" />

@@ -26,33 +26,36 @@ public class NewsDetailController {
     @Autowired
     private RestTemplate restTemplate;
 
+    //    返回自定义JSON的新闻详细
     @RequestMapping("/getNewsDetail/{newsId}")
     MyJson getNewsDetailByNewsId(@PathVariable("newsId") Integer newsId) {
-        NewsDetail newsDetail = this.newsDetailService.getNewsDetailByNewsId(newsId);
-        List<Paragraph> paragraphList = this.newsDetailService.getContentByNewsId(newsId);
-        // 排序数组将段落位置重小到大的排序
-        for (int i = 1; i < paragraphList.size(); i++) {
-            for (int j = 0; j < paragraphList.size() - i; j++) {
-                if (paragraphList.get(j).getPosition() > paragraphList.get(j + 1).getPosition()) {
-                    Paragraph temp = new Paragraph();
-                    temp = paragraphList.get(j + 1);
-                    paragraphList.set(j + 1, paragraphList.get(j));
-                    paragraphList.set(j, temp);
-                }
-            }
-        }
-        newsDetail.setDescription(paragraphList);
-        List<Comment> commentList = restTemplate.getForObject("http://192.168.56.1:8050/comment-server/comment/getCommentsByNewsId/2010000001",List.class);
-        newsDetail.setComments(commentList);
+        NewsDetail newsDetail = this._getNewsDetailByNewsId(newsId);
         return JsonFormat.ok(newsDetail);
     }
-
+    // getNewsDetailByNewsId 通过newsId获取新闻
+    @RequestMapping("/_getNewsDetail/{newsId}")
+    NewsDetail _getNewsDetailByNewsId(@PathVariable("newsId") Integer newsId){
+        // 通过newsId获取新闻详情和新闻的文章内容。
+        NewsDetail newsDetail = this.newsDetailService.getNewsDetailByNewsId(newsId);
+        //
+        List<Paragraph> paragraphList = this.newsDetailService.getContentByNewsId(newsId);
+        // 把新闻的文章内容设置到新闻详情里面去
+        newsDetail.setDescription(paragraphList);
+        // 设置新闻详情的评论列表
+        List<Comment> commentList = restTemplate.getForObject("http://192.168.59.3:8050/comment-server/comment/getCommentsByNewsId/" + newsId,List.class);
+        // 添加本条新闻的所有评论到新闻详情里
+        newsDetail.setComments(commentList);
+        // 获取本条新闻的评论数量
+        newsDetail.setCommentNumber(commentList.size());
+        return newsDetail;
+    }
+    // 通过newsid获取文章内容
     @RequestMapping("/getNewsContent/{newsId}")
     public List<Paragraph> getContentByNewsId(@PathVariable("newsId") Integer newsId) {
         List<Paragraph> paragraphList = new ArrayList<>();
         paragraphList = this.newsDetailService.getContentByNewsId(newsId);
         return paragraphList;
     }
-
+    // 通过新闻id获取评论数
 
 }

@@ -1,6 +1,5 @@
 package cn.edu.cqcet.teamlala.po;
 
-import com.sun.istack.internal.Interned;
 import jdk.nashorn.internal.ir.annotations.Ignore;
 
 import java.awt.*;

@@ -1,0 +1,6 @@
+cn\edu\cqcet\teamlala\serviceImpl\TagServiceImpl.class
+cn\edu\cqcet\teamlala\service\TagServer.class
+cn\edu\cqcet\teamlala\TagServer.class
+cn\edu\cqcet\teamlala\mapper\TagMapper.class
+cn\edu\cqcet\teamlala\po\Tag.class
+cn\edu\cqcet\teamlala\contorller\TagControlle.class

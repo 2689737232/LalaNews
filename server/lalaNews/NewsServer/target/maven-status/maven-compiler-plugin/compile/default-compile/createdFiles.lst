@@ -1,0 +1,13 @@
+cn\edu\cqcet\teamlala\controller\NewsController.class
+cn\edu\cqcet\teamlala\mapper\NewsDetailMapper.class
+cn\edu\cqcet\teamlala\serviceImpl\NewsServiceImpl.class
+cn\edu\cqcet\teamlala\po\News.class
+cn\edu\cqcet\teamlala\po\NewsImage.class
+cn\edu\cqcet\teamlala\serviceImpl\NewsDetailServiceImpl.class
+cn\edu\cqcet\teamlala\service\NewsService.class
+cn\edu\cqcet\teamlala\service\NewsDetailService.class
+cn\edu\cqcet\teamlala\po\NewsDetail.class
+cn\edu\cqcet\teamlala\controller\NewsDetailController.class
+cn\edu\cqcet\teamlala\mapper\NewsMapper.class
+cn\edu\cqcet\teamlala\NewServer.class
+cn\edu\cqcet\teamlala\po\Paragraph.class

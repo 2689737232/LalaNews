@@ -5,6 +5,8 @@ spring:
     name: SearchServer
   datasource:
     url: jdbc:mysql://localhost:3306/lala_news?serverTimezone=UTC
+    #    部署微服务后的地址
+    # url: jdbc:mysql://mysql:3306/lala_news?serverTimezone=UTC
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -20,3 +22,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+#      上线地址  通过docker容器名eureka-server进行访问
+#      defaultZone: http://eureka-server:8761/eureka/
