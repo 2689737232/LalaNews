@@ -1,11 +1,14 @@
 // pages/myLove/myLove.js
+const getUserCollectByOpenId = require("../../requestManager/requestManager.js").getUserCollectByOpenId;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    openId: null
+    openId: null,
+    // 用户收藏列表
+    collectList: null
   },
 
   /**
@@ -15,6 +18,19 @@ Page({
     let openId = options.openId;
     this.setData({
       openId: openId
+    })
+    this.getUserCollect(openId,0,5);
+  },
+  // 获取用户收藏列表
+  getUserCollect(openId,start,end){
+    let promise = getUserCollectByOpenId(openId,start,end);
+    let self = this;
+    promise.then((res)=>{
+       console.log(res);
+       let collectList = res.msg.data;
+       self.setData({
+        collectList: collectList
+       })
     })
   },
   // 获取用户的收藏新闻列表

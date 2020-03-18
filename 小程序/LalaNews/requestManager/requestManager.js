@@ -392,9 +392,30 @@ function getRecommendList(start,end) {
 
 
 }
+// 根据用户的openid获取用户的收藏列表
+function getUserCollectByOpenId(openId,start,end){
+   let userCollect = urlObj.userCollect;
+   let url = userCollect + openId + "/" + start + "/" + end;
+   return new Promise((res, rej) => {
+    // 请求newsDetail
+    wx.request({
+        url: url,
+        dataType: JSON,
+        success(r) {
+            let data = JSON.parse(r.data);
+            res(data)
+        },
+        fail(e) {
+            console.log(e);
+            rej(e);
+        }
+    })
+  })
+}
 module.exports = {
   getNewsListByTagId,
   getNewsDetailById,
   getRecommendList,
-  getTagList
+  getTagList,
+  getUserCollectByOpenId
 }

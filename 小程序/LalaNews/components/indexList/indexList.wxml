@@ -1,5 +1,10 @@
 <!-- 首页滚动列表 -->
-<view class="scroll-container">
+<scroll-view
+ class="scroll-container"
+ style="height: 900rpx;width: 100%;"
+ scroll-y="true"
+ refresher-enabled="{{true}}"
+>
 	<!-- 循环每一项数据显示新闻 -->
 	<block wx:for="{{newsList}}">
 		<!-- 普通新闻 -->
@@ -15,8 +20,6 @@
 			<multi-image newsItem="{{item}}" class="news-item multi-image" />
 		</block>
 	</block>
-</view>
-<view class="foot">
-	没有更多了哦
-</view>
+	<view class="foot">没有更多了哦</view>
+</scroll-view>
 

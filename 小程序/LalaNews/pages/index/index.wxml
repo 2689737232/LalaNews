@@ -1,5 +1,7 @@
 <view class="wrapper">
+	<!-- 顶部的标签分类 -->
 	<index-scroll tagArr="{{tagArr}}" class="top-tag" />
+	<!-- 底部的新闻列表 -->
 	<index-list class="newsList" newsList="{{newsList}}" />
 </view>
 

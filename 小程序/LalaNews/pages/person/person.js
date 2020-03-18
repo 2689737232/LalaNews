@@ -93,8 +93,9 @@ Page({
   },
   // 我的收藏
   myLove() {
+    // console.log(this.data);
     // url需要添加参数： 用户的id
-    let url = "/pages/myLove/myLove?openId=" + this.data.openid;
+    let url = "/pages/myLove/myLove?openId=" + this.data.openId;
     wx.navigateTo({
       url: url,
     }),

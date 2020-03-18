@@ -7,9 +7,17 @@
     margin-left: 5%;
     margin-top: 15rpx;
     background-color: #F2F2F2;
-    padding: 20rpx;
+    padding: 20rpx 0rpx 20rpx 20rpx;
     width: 90%;
     display: flex;
+}
+.text{
+    visibility: hidden;
+    font-weight: bold;
+    margin-left: 25rpx;
+}
+.text.focus-text{
+    visibility: visible;
 }
 .search-icon{
     height: 50rpx;
@@ -83,3 +91,12 @@
 .foot{
     height: 128rpx;
 }
+
+.other-list{
+    height: 35rpx;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 100rpx;
+    line-height: 35rpx;
+}
+

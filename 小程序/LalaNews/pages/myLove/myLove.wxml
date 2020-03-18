@@ -1,7 +1,7 @@
 <view class="mylove-container">
-	<view wx:if="{{openId}}">
+	<!-- <view wx:if="{{openId}}">
 		用户的openid：{{openId}}
-	</view>
-
+	</view> -->
+	<index-list newsList="{{collectList}}" />
 </view>
 

@@ -12,7 +12,6 @@ Component({
   data: {
     selectTagIndex: 0,
     scrollLeft: 0
-    // tagArr: ["最热", "最新", "附近"]
   },
 
   /**

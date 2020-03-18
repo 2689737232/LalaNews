@@ -11,7 +11,7 @@ Component({
   /**
    * 组件的初始数据
    */
-  
+
   data: {
 
   },
@@ -25,6 +25,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    // touchstart(){
+    //   console.log("开始移动");
+    // },
+    refresherpulling(){
+      console.log("被属性");
+    }
   }
 })

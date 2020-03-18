@@ -1,0 +1,95 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5.7
+    restart: on-failure
+    ports:
+      - 3306:3306
+    volumes:
+      - microservice-mysql:/var/lib/mysql
+    networks:
+      - microservice-net
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: microservice
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints: [node.role == manager]
+
+  eureka-server:
+    image: 192.168.56.1:5000/microservice-erueka-server:1.0-SNAPSHOT
+    restart: on-failure
+    ports:
+      - 8761:8761
+    networks:
+      - microservice-net
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+  gateway-zuul:
+    image: 192.168.56.1:5000/microservice-gateway-zuul:1.0-SNAPSHOT
+    restart: on-failure
+    ports:
+      - 8050:8050
+    networks:
+      - microservice-net
+    depends_on:
+      - eureka-server
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints: [node.role == manager]
+
+  order-service:
+    image: 192.168.56.1:5000/microservice-eureka-order:1.0-SNAPSHOT
+    restart: on-failure
+    ports:
+      - 7901:7901
+    networks:
+      - microservice-net
+    depends_on:
+      - mysql
+      - eureka-server
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+  user-service:
+    image: 192.168.56.1:5000/microservice-eureka-user:1.0-SNAPSHOT
+    restart: on-failure
+    ports:
+      - 8000:8000
+    networks:
+      - microservice-net
+    depends_on:
+      - mysql
+      - eureka-server
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+#  visualizer:
+#    image: dockersamples/visualizer:stable
+#    ports:
+#      - 8081:8080
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
+#    deploy:
+#      placement:
+#        constraints: [node.role == manager]
+#    networks:
+#      - microservice-net
+
+networks:
+  microservice-net:
+volumes:
+  microservice-mysql:

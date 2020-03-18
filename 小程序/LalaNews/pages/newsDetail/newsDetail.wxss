@@ -64,6 +64,7 @@ page {
 }
 
 .paragraph {
+    text-indent: 25rpx;
     letter-spacing: 3rpx;
     font-size: 35rpx;
 }

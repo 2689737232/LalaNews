@@ -17,7 +17,7 @@ Component({
   },
   observers: {
     commentList: (e) => {
-      console.log(e);
+      console.log(e,'评论数据');
     }
   },
   /**
