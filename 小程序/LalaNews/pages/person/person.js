@@ -1,5 +1,7 @@
 // pages/person/person.js
-const urlObj = require("../../requestManager/base.js").urlObj;
+const urlObj = require("../../requestManager/base.js").urlObj,
+  toolsObj = require("../../utils/tools.js").toolsObj,
+  setGlobal2Data = toolsObj.setGlobal2Data;    // 获取将登录信息设置到全局的方法
 Page({
   /**
    * 页面的初始数据
@@ -10,7 +12,6 @@ Page({
     userName: null,
     openId: null
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -43,10 +44,10 @@ Page({
         wx.request({
           url: url, //仅为示例，并非真实的接口地址
           success(res) {
-            console.log(res);
-            self.setData({
-              openId: res.data.openid
-            })
+            // console.log(res);
+            // 设置openId
+            let openId = res.data.openid;
+            openId ? self.setUserIdToData(res.data.openid) : undefined;
           }
         })
       }
@@ -69,12 +70,13 @@ Page({
         // 获取用户昵称和头像url
         let userIcon = res.userInfo.avatarUrl,
           userName = res.userInfo.nickName;
+        // 设置登录状态
         self.setData({
           isLoging: true,
           userIcon: userIcon,
           userName: userName
         })
-        
+
       }
     })
   },
@@ -93,14 +95,14 @@ Page({
   },
   // 我的收藏
   myLove() {
-    // console.log(this.data);
+    console.log(this.data.openId);
     // url需要添加参数： 用户的id
     let url = "/pages/myLove/myLove?openId=" + this.data.openId;
     wx.navigateTo({
       url: url,
     }),
-    // 发送user的信息到后台判断是否是新用户
-    this.sendUserInfo2Server();
+      // 发送user的信息到后台判断是否是新用户
+      this.sendUserInfo2Server();
   },
   //发送用户信息到后台，判断添加新用户
   sendUserInfo2Server() {
@@ -108,10 +110,10 @@ Page({
       userIcon = this.data.userIcon,
       userOpenId = this.data.openId;
     console.log(userName, userIcon, userOpenId);
-    const url = urlObj.addUser 
+    const url = urlObj.addUser
     wx.request({
       url: url, //仅为示例，并非真实的接口地址
-      data:{
+      data: {
         userName: userName,
         userIcon: userIcon,
         openId: userOpenId
@@ -120,6 +122,17 @@ Page({
         console.log("添加成功过");
       }
     })
+  },
+  // 设置用户的openId到app全局和页面中
+  setUserIdToData(openId) {
+    if (openId) {
+      // 设置到页面
+      this.setData({
+        openId: openId
+      })
+      // 设置到全局
+      setGlobal2Data('openId', openId);
+    }
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

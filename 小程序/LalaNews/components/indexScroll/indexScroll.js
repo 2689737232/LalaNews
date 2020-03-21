@@ -24,6 +24,8 @@ Component({
       this.setData({
         selectTagIndex: index,
       })
+      // 触发index页面上的自定事件，通知更改tag项，以显示不同的新闻
+      this.triggerEvent('customevent',{index});
     }
   }
 })

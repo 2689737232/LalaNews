@@ -1,3 +1,4 @@
+// 代理设置NavigationBar
 module.exports.proxySetNavigationBar = (title, success, fail, complete) => {
     wx.setNavigationBarTitle({
         title,
@@ -26,11 +27,11 @@ module.exports.toolsObj = {
         return result;
     },
     // 获取用户信息
-    getInfo() {
+    getInfoPromise(e = "") {
         wx.getUserInfo({
             success(msg) {
                 let userImage = msg.userInfo.avatarUrl;
-                console.log(userImage);
+                console.log(userImage,e);
             }
         })
     }

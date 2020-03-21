@@ -1,7 +1,10 @@
-<view class="wrapper">
-	<!-- 顶部的标签分类 -->
-	<index-scroll tagArr="{{tagArr}}" class="top-tag" />
-	<!-- 底部的新闻列表 -->
-	<index-list class="newsList" newsList="{{newsList}}" />
+<view class="{{isLoadOver ? 'mask-hidden' : 'mask-active'}}">
+	<view class="wrapper">
+		<!-- 顶部的标签分类 -->
+		<!-- 通过自定义事件，获取子组件点击的标签项 -->
+		<index-scroll tagArr="{{tagArr}}" class="top-tag" bind:customevent="itemClick" />
+		<!-- 底部的新闻列表 -->
+		<index-list class="newsList" newsList="{{newsList}}" />
+	</view>
 </view>
 

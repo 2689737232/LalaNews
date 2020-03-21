@@ -37,13 +37,18 @@
 <view class="foot" />
 <!-- 底部固定喜欢和评论按钮 -->
 <view class="bottom-comment">
-	<view class="right-like">
-		<image class="comment-icon like" src="/src/image/喜欢.png" />
-		{{newsDetail.likeNumber}}
+	<view class="right-like" bind:tap="clickCollect">
+		<block wx:if="{{isCollect}}">
+			<image class="comment-icon like" src="{{imgArr.likeSelect}}" />
+		</block>
+		<block wx:else>
+			<image class="comment-icon like" src="{{imgArr.like}}" />
+		</block>
+		<!-- {{newsDetail.likeNumber}} -->
 	</view>
 	<view class="middle-line" />
 	<view class="left-comment">
-		<image class="comment-icon comment" src="/src/image/消息.png" />
+		<image class="comment-icon comment" src="{{imgArr.comment}}" />
 		{{newsDetail.commentNumber}}
 	</view>
 </view>
@@ -56,7 +61,8 @@
 		 confirm-type="send"
 		 placeholder="回复{{review}}: "
 		 type="text"
-		>输入框
+		>
+		输入框
 		</input>
 	</view>
 </view>

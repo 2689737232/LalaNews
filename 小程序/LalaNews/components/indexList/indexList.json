@@ -3,6 +3,7 @@
   "usingComponents": {
     "normal-news": "../normalNews/normalNews",
     "video-news": "../videoNews/videoNews",
-    "multi-image": "../multiImage/multiImage"
+    "multi-image": "../multiImage/multiImage",
+    "load-animate":"../loadingAnimate/cmp"
   }
 }

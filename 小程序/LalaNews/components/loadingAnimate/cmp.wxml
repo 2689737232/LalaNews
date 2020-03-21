@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="wrap">
+        <view class="circle circle1"></view>
+        <view class="circle circle2"></view>
+    </view>
+</view>

@@ -68,12 +68,12 @@ const dataObj = {
   }
 }
 // 获取tag列表 判断用户是否登录
-function getTagList(isLoging) {
+function getTagList(openId) {
   let _url = null;
-  if (isLoging) {
-
+  // 判断用户是否登录
+  if (openId) {
+    _url = urlObj.userTag + openId;
   } else {
-    // 获取url
     _url = urlObj.getTagList + "normal";
   };
 
@@ -311,24 +311,24 @@ function getNewsDetailById(newsId) {
   })
 }
 // 获取推荐标签列表
-function getRecommendList(start,end) {
+function getRecommendList(start, end) {
   // 基本url
   const urlObj = baseObj.urlObj;
   const _url = urlObj.getSearchTagList + start + "/" + end;
   return new Promise((res, rej) => {
     // 请求newsDetail
     wx.request({
-        url: _url,
-        method: "GET",
-        dataType: JSON,
-        success(r) {
-            let data = JSON.parse(r.data);
-            res(data)
-        },
-        fail(e) {
-            console.log(e);
-            rej(e);
-        }
+      url: _url,
+      method: "GET",
+      dataType: JSON,
+      success(r) {
+        let data = JSON.parse(r.data);
+        res(data)
+      },
+      fail(e) {
+        console.log(e);
+        rej(e);
+      }
     })
     // let recommendList = {
     //   status: "ok",
@@ -393,22 +393,112 @@ function getRecommendList(start,end) {
 
 }
 // 根据用户的openid获取用户的收藏列表
-function getUserCollectByOpenId(openId,start,end){
-   let userCollect = urlObj.userCollect;
-   let url = userCollect + openId + "/" + start + "/" + end;
-   return new Promise((res, rej) => {
+function getUserCollectByOpenId(openId, start, end) {
+  let userCollect = urlObj.userCollect;
+  let url = userCollect + openId + "/" + start + "/" + end;
+  return new Promise((res, rej) => {
     // 请求newsDetail
     wx.request({
-        url: url,
-        dataType: JSON,
-        success(r) {
-            let data = JSON.parse(r.data);
-            res(data)
-        },
-        fail(e) {
-            console.log(e);
-            rej(e);
-        }
+      url: url,
+      dataType: JSON,
+      success(r) {
+        let data = JSON.parse(r.data);
+        res(data)
+      },
+      fail(e) {
+        console.log(e);
+        rej(e);
+      }
+    })
+  })
+}
+// 根据用户openId和newsId判断本新闻是否收藏
+function getNewsIsCollect(openId, newsId) {
+  let url = urlObj.newsIsCollect + openId + "/" + newsId;
+  return new Promise((res, rej) => {
+    wx.request({
+      url: url,
+      dataType: JSON,
+      success(r) {
+        let data = JSON.parse(r.data);
+        res(data)
+      },
+      fail(e) {
+        console.log(e);
+        rej(e);
+      }
+    })
+  })
+}
+// 用户点击收藏按钮
+function clickCollect(openId, newsId) {
+  let url = urlObj.clickCollect + openId + "/" + newsId;
+  return new Promise((res, rej) => {
+    wx.request({
+      url: url,
+      dataType: JSON,
+      success(r) {
+        let data = JSON.parse(r.data);
+        res(data)
+      },
+      fail(e) {
+        console.log(e);
+        rej(e);
+      }
+    })
+  })
+}
+// 获取用户喜欢的tag
+function getUserTag(openId) {
+  let url = urlObj.userTag + openId;
+  return new Promise((res, rej) => {
+    wx.request({
+      url: url,
+      dataType: JSON,
+      success(r) {
+        let data = JSON.parse(r.data);
+        res(data)
+      },
+      fail(e) {
+        console.log(e);
+        rej(e);
+      }
+    })
+  })
+}
+// 用户删除指定的tag
+function deleteUserTagByTagId(openId, tagId) {
+  let url = urlObj.deleteTag + openId + "/" + tagId;
+  return new Promise((res, rej) => {
+    wx.request({
+      url: url,
+      dataType: JSON,
+      success(r) {
+        let data = JSON.parse(r.data);
+        res(data)
+      },
+      fail(e) {
+        console.log(e);
+        rej(e);
+      }
+    })
+  })
+}
+// 用户添加喜欢的tag
+function insertUserTag(openId, tagId) {
+  let url = urlObj.insertUserTag + openId + "/" + tagId;
+  return new Promise((res, rej) => {
+    wx.request({
+      url: url,
+      dataType: JSON,
+      success(r) {
+        let data = JSON.parse(r.data);
+        res(data)
+      },
+      fail(e) {
+        console.log(e);
+        rej(e);
+      }
     })
   })
 }
@@ -417,5 +507,10 @@ module.exports = {
   getNewsDetailById,
   getRecommendList,
   getTagList,
-  getUserCollectByOpenId
+  getUserCollectByOpenId,
+  getNewsIsCollect,
+  clickCollect,
+  getUserTag,
+  deleteUserTagByTagId,
+  insertUserTag
 }

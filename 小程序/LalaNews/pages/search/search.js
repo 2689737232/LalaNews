@@ -1,5 +1,8 @@
 // pages/search/search.js
-let getRecommendList = require("../../requestManager/requestManager.js").getRecommendList;
+let requestManager = require("../../requestManager/requestManager.js"),
+  getRecommendList = requestManager.getRecommendList,
+  getUserTag = requestManager.getUserTag,
+  toolsObj = require("../../utils/tools.js").toolsObj;
 Page({
 
   /**
@@ -9,7 +12,7 @@ Page({
     // 搜索框是否聚焦，聚焦后显示清空按钮
     isFoucs: false,
     // 输入框的初始值
-    value:"",
+    value: "",
     // 已经添加的列表
     alreadyAdd: [
       {
@@ -40,17 +43,19 @@ Page({
    */
   onLoad: function (options) {
     let self = this;
+    // 获取底部9个推荐标签
     let resultPromisse = getRecommendList(0, 9);
     resultPromisse.then((res) => {
-      console.log(res);
+      // console.log(res, "********");
       let recommendList = res.msg.data;
       self.setData({
         recommendList: recommendList,
         firstRecommendList: recommendList
       })
     })
+
   },
-  // 推荐列表每一项触摸开始
+  // 推荐列表，每一个标签触摸开始
   itemTouchStart(msg) {
     let index = msg.currentTarget.dataset.index;
     this.setData({
@@ -67,25 +72,65 @@ Page({
   itemTap(msg) {
     let index = msg.currentTarget.dataset.index,
       item = this.data.recommendList[index],
+      tagId = item.tagId,
       result = false,
-      _alreadyAdd = this.data.alreadyAdd;
+      _alreadyAdd = this.data.alreadyAdd,
+      openId = toolsObj.getGlobalData("openId"),
+      self = this;
+
+    // 循环遍历数组判断是否在其中，不在其中就添加进去
     _alreadyAdd.forEach((p, i) => {
       if (p.tagId == item.tagId) {
         result = true
       }
     });
-    // 如果这一项不在已经添加的列表中，那么就添加进列表
-    result ? null : _alreadyAdd.push(item);
-    this.setData({
+
+
+    // 如果用户存在并且这一项不存在的话进行添加
+    if (openId && !result) {
+      // 提交到后端，根据数据。在页面上进行添加
+      requestManager.insertUserTag(openId, tagId).then((e) => {
+        console.log(e);
+        e.msg.data ? _alreadyAdd.push(item) : null;
+        self.setData({
+          alreadyAdd: _alreadyAdd
+        });
+      })
+    }
+    if (!openId && !result) {
+      // 如果这一项不在已经添加的列表中，那么就添加进列表
+      result ? null : _alreadyAdd.push(item);
+    }
+    self.setData({
       alreadyAdd: _alreadyAdd
     });
   },
   // 取消已经添加的标签
   cancelItem(msg) {
-    let index = msg.currentTarget.dataset.index;
-    let _alreadyAdd = this.data.alreadyAdd;
-    // 如果只剩一项了不进行取消
-    _alreadyAdd.length == 1 ? null : _alreadyAdd.splice(index, 1);
+    let index = msg.currentTarget.dataset.index,
+      openId = toolsObj.getGlobalData("openId"),
+      _alreadyAdd = this.data.alreadyAdd;
+
+    // 并且如果只剩一项,就不能取消
+    // 如果用户已经登录，连接后端。
+    if (openId && _alreadyAdd.length != 1) {
+      // console.log(index,this.data.alreadyAdd[index]);
+
+      let tagId = this.data.alreadyAdd[index].tagId;
+      // 根据后端返回数据清除指定项目
+      requestManager.deleteUserTagByTagId(openId, tagId).then((e) => {
+        // 判断是否是最后一个如果是最后一个不能删除
+        e.msg.data ? _alreadyAdd.splice(index, 1) : null;
+        // 重新设置数据驱动渲染
+        this.setData({
+          alreadyAdd: _alreadyAdd
+        })
+      })
+    } else {
+      // 清除指定项
+      _alreadyAdd.length != 1 ? _alreadyAdd.splice(index, 1) : null;
+    }
+    // 重新设置数据驱动渲染
     this.setData({
       alreadyAdd: _alreadyAdd
     })
@@ -130,10 +175,23 @@ Page({
     console.log("确认");
   },
   // 点击清除按钮，清空搜索框
-  clear(){
-     this.setData({
-       value: ""
-     })
+  clear() {
+    this.setData({
+      value: ""
+    })
+  },
+  // 获取已经登录的用户的喜欢的标签
+  getUserTag() {
+    let openId = toolsObj.getGlobalData("openId"),
+      self = this;
+    if (openId) {
+      let promise = getUserTag(openId);
+      promise.then((e) => {
+        self.setData({
+          alreadyAdd: e.msg.data.tagList
+        })
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -146,6 +204,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    this.initTabBar();
+    // 获取登录用户已经添加的标签
+    this.getUserTag();
+  },
+  // 初始化tabBar
+  initTabBar() {
     if (typeof this.getTabBar === 'function' &&
       this.getTabBar()) {
       this.getTabBar().setData({
@@ -153,7 +217,7 @@ Page({
       })
     }
   },
-
+  // 获取
   /**
    * 生命周期函数--监听页面隐藏
    */
@@ -176,7 +240,8 @@ Page({
   },
 
   /**
-   * 页面上拉触底事件的处理函数
+   * 页面上拉触
+   * 底事件的处理函数
    */
   onReachBottom: function () {
 

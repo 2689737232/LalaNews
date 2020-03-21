@@ -18,7 +18,7 @@ Component({
   lifetimes: {
     // 在组件attached方法里面执行获取数据的方法
     attached() {
-
+      
     }
   },
   /**

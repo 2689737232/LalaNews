@@ -1,144 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a67fe456-3628-4800-9690-fa3003e806a5" name="Default Changelist" comment="lalaNews first commit">
-      <change afterPath="$PROJECT_DIR$/CommentServer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EurekaServer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsServer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchServer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TagServer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserServer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserCollectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/po/Collect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserCollectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Zuul/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="ee6e9d9e-9898-44a7-99c7-becf6d60f7b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/target.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/src/main/main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/mapper/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/po/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/po/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/target/classes/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/target/classes/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/target/classes/cn/edu/cqcet/teamlala/mapper/CommentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/target/classes/cn/edu/cqcet/teamlala/mapper/CommentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/target/classes/cn/edu/cqcet/teamlala/po/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/target/classes/cn/edu/cqcet/teamlala/po/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EruekaServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EruekaServer/src/main/java/cn/edu/cqcet/teamlala/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/src/main/java/cn/edu/cqcet/teamlala/EurekaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EruekaServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EruekaServer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EruekaServer/target/classes/cn/edu/cqcet/teamlala/EurekaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/target/classes/cn/edu/cqcet/teamlala/EurekaApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/target/JSON-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/target/JSON-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/target/JSON-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/JSON/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/NewServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/NewServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/mapper/NewsDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/mapper/NewsDetailMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/NewsDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/NewsDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/Paragraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/Paragraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/service/NewsDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/service/NewsDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/serviceImpl/NewsDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/serviceImpl/NewsDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/NewServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/NewServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/controller/NewsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/controller/NewsDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/controller/NewsDetailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/mapper/NewsDetailMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/mapper/NewsDetailMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/po/News.class" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/po/News.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/po/NewsDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/po/NewsDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/po/Paragraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/po/Paragraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/service/NewsDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/service/NewsDetailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/serviceImpl/NewsDetailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/serviceImpl/NewsDetailServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SearchServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SearchServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchServer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SearchServer/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TagServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TagServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TagServer/src/main/java/cn/edu/cqcet/teamlala/contorller/TagControlle.java" beforeDir="false" afterPath="$PROJECT_DIR$/TagServer/src/main/java/cn/edu/cqcet/teamlala/contorller/TagController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TagServer/src/main/java/cn/edu/cqcet/teamlala/mapper/TagMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/TagServer/src/main/java/cn/edu/cqcet/teamlala/mapper/TagMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TagServer/target/TagServer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TagServer/target/TagServer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TagServer/target/TagServer-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TagServer/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TagServer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TagServer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/TagServer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaServer/src/main/java/cn/edu/cqcet/teamlala/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/src/main/java/cn/edu/cqcet/teamlala/EurekaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaServer/target/classes/cn/edu/cqcet/teamlala/EurekaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/target/classes/cn/edu/cqcet/teamlala/EurekaApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TagServer/target/classes/cn/edu/cqcet/teamlala/contorller/TagControlle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TagServer/target/classes/cn/edu/cqcet/teamlala/mapper/TagMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/TagServer/target/classes/cn/edu/cqcet/teamlala/mapper/TagMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/UserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/UserApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Zuul/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/src/main/java/cn/xiaohaimao/TagServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/src/main/java/cn/xiaohaimao/contorller/TagControlle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/src/main/java/cn/xiaohaimao/mapper/TagMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/src/main/java/cn/xiaohaimao/po/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/src/main/java/cn/xiaohaimao/service/TagServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/src/main/java/cn/xiaohaimao/serviceImpl/TagServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/target/classes/cn/xiaohaimao/TagServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/target/classes/cn/xiaohaimao/contorller/TagControlle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/target/classes/cn/xiaohaimao/mapper/TagMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/target/classes/cn/xiaohaimao/po/Tag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/target/classes/cn/xiaohaimao/service/TagServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/TagServer/target/classes/cn/xiaohaimao/serviceImpl/TagServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/src/main/java/cn/xiaohaimao/DemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/src/main/java/cn/xiaohaimao/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/src/main/java/cn/xiaohaimao/config/PersonConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/src/main/java/cn/xiaohaimao/po/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/src/main/resources/person.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/src/test/java/SpringUitlTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/target/classes/cn/xiaohaimao/DemoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/target/classes/cn/xiaohaimao/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/target/classes/cn/xiaohaimao/config/PersonConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/target/classes/cn/xiaohaimao/po/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/target/classes/person.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/demo/target/test-classes/SpringUitlTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test0220/test0220.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/components/commentList/commentList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/components/commentList/commentList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserCollectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserCollectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserCollectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserCollectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/controller/UserCollectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/controller/UserCollectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/service/UserCollectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/service/UserCollectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/components/indexList/indexList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/components/indexList/indexList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/components/indexList/indexList.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/components/indexList/indexList.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/components/indexList/indexList.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/components/indexList/indexList.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/components/indexScroll/indexScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/components/indexScroll/indexScroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/components/videoNews/videoNews.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/components/videoNews/videoNews.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/custom-tab-bar/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/custom-tab-bar/index.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/index/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/myLove/myLove.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/myLove/myLove.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/myLove/myLove.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/myLove/myLove.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/myLove/myLove.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/myLove/myLove.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/person/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/person/person.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/project.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/requestManager/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/requestManager/base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/requestManager/requestManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/requestManager/requestManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/utils/tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/utils/tools.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/utils/util.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/TagServer/target/" />
-    <ignored path="$PROJECT_DIR$/Util/target/" />
-    <ignored path="$PROJECT_DIR$/JSON/target/" />
-    <ignored path="$PROJECT_DIR$/EruekaServer/target/" />
     <ignored path="$PROJECT_DIR$/NewsServer/target/" />
-    <ignored path="$PROJECT_DIR$/Hystrix/target/" />
-    <ignored path="$PROJECT_DIR$/Zuul/target/" />
     <ignored path="$PROJECT_DIR$/CommentServer/target/" />
     <ignored path="$PROJECT_DIR$/SearchServer/target/" />
+    <ignored path="$PROJECT_DIR$/JSON/target/" />
+    <ignored path="$PROJECT_DIR$/Zuul/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/TagServer/target/" />
     <ignored path="$PROJECT_DIR$/UserServer/target/" />
     <ignored path="$PROJECT_DIR$/EurekaServer/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,199 +52,106 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/lalaNews$TagServer.ic" NAME="TagServer Coverage Results" MODIFIED="1579619237327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>cn.edu.cqcet.teamlala.*</FILTER>
-    </SUITE>
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1158647121">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.25" value="2" />
-          <entry key="project.open.time.26" value="2" />
-          <entry key="project.open.time.28" value="2" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.30" value="1" />
-          <entry key="project.open.time.33" value="2" />
-          <entry key="project.open.time.42" value="1" />
-          <entry key="project.open.time.49" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="20" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Dockerfile" value="120" />
-          <entry key="dummy" value="37" />
-          <entry key="java" value="11817" />
-          <entry key="pom" value="2" />
-          <entry key="txt" value="28" />
-          <entry key="xml" value="960" />
-          <entry key="yml" value="1352" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Dockerfile" value="120" />
-          <entry key="JAVA" value="11817" />
-          <entry key="PLAIN_TEXT" value="65" />
-          <entry key="XML" value="962" />
-          <entry key="YAML" value="1352" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages">
-        <counts>
-          <entry key="git.branch.checkout.local" value="1" />
-          <entry key="git.branch.create.new" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="19" />
-          <entry key="class" value="5" />
-          <entry key="dockerfile" value="1" />
-          <entry key="fxml" value="1" />
-          <entry key="iml" value="3" />
-          <entry key="java" value="402" />
-          <entry key="pom" value="4" />
-          <entry key="xml" value="120" />
-          <entry key="yml" value="66" />
+          <entry key="Dockerfile" value="1" />
+          <entry key="java" value="43" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
-          <entry key="Dockerfile" value="19" />
-          <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="402" />
-          <entry key="XML" value="125" />
-          <entry key="YAML" value="66" />
-          <entry key="yarn.lock" value="1" />
+          <entry key="Dockerfile" value="1" />
+          <entry key="JAVA" value="43" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.spring.core.usages.trigger">
+      <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="actions.SpringChangeActiveProfiles" value="2" />
+          <entry key="java" value="1588" />
+          <entry key="xml" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1588" />
+          <entry key="XML" value="12" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SearchServer/src/main/java/cq/edu/cqcet/lalateam/controller/SearchController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserCollectService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="266">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="72" column="32" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="32" />
+              <folding>
+                <element signature="method#getUserCollectByOpenId#0;class#UserCollectServiceImpl#0" />
+                <element signature="method#getNewsIsCollect#0;class#UserCollectServiceImpl#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserCollectController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="79" column="77" selection-start-line="79" selection-start-column="72" selection-end-line="79" selection-end-column="77" />
+              <folding>
+                <element signature="method#getUserCollectByOpenId#0;class#UserCollectController#0" />
+                <element signature="method#collectClick#0;class#UserCollectController#0" />
+                <element signature="method#insertNewsId2Collect#0;class#UserCollectController#0" />
+                <element signature="method#deleteNewsIdFromCollect#0;class#UserCollectController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="39" column="103" selection-start-line="39" selection-start-column="103" selection-end-line="39" selection-end-column="103" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>mysql</find>
-      <find>format</find>
-      <find>restTemplate</find>
-    </findStrings>
-    <dirStrings>
-      <dir>C:\Users\Administrator\Desktop\LalaNews\server\lalaNews</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/../.." value="lalaNewsServer" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/po/User.java" />
-        <option value="$PROJECT_DIR$/JSON/src/main/java/cn/edu/cqcet/teamlala/Test.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserService.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/EruekaServer/pom.xml" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/Paragraph.java" />
-        <option value="$PROJECT_DIR$/EurekaServer/Dockerfile" />
-        <option value="$PROJECT_DIR$/NewsServer/Dockerfile" />
-        <option value="$PROJECT_DIR$/SearchServer/Dockerfile" />
-        <option value="$PROJECT_DIR$/TagServer/Dockerfile" />
-        <option value="$PROJECT_DIR$/UserServer/Dockerfile" />
-        <option value="$PROJECT_DIR$/Zuul/Dockerfile" />
-        <option value="$PROJECT_DIR$/JSON/pom.xml" />
-        <option value="$PROJECT_DIR$/CommentServer/Dockerfile" />
-        <option value="$PROJECT_DIR$/CommentServer/pom.xml" />
-        <option value="$PROJECT_DIR$/EurekaServer/pom.xml" />
-        <option value="$PROJECT_DIR$/NewsServer/pom.xml" />
-        <option value="$PROJECT_DIR$/SearchServer/pom.xml" />
-        <option value="$PROJECT_DIR$/TagServer/pom.xml" />
-        <option value="$PROJECT_DIR$/Zuul/pom.xml" />
-        <option value="$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/SearchServer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/po/CollectNews.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/EurekaServer/src/main/java/cn/edu/cqcet/teamlala/EurekaApplication.java" />
         <option value="$PROJECT_DIR$/UserServer/pom.xml" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/UserApplication.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/po/Collect.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/News.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/NewsDetail.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/po/Comment.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsController.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.java" />
         <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserCollectService.java" />
+        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.java" />
         <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserCollectController.java" />
-        <option value="$PROJECT_DIR$/Zuul/src/main/java/cn/eud/cqcet/teamlala/Yes.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/NewServer.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/controller/CommentController.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/mapper/CommentMapper.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/mapper/NewsDetailMapper.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/service/NewsDetailService.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/serviceImpl/NewsDetailServiceImpl.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsDetailController.java" />
-        <option value="$PROJECT_DIR$/TagServer/src/main/java/cn/edu/cqcet/teamlala/mapper/TagMapper.java" />
-        <option value="$PROJECT_DIR$/TagServer/src/main/java/cn/edu/cqcet/teamlala/contorller/TagController.java" />
+        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.java" />
       </list>
     </option>
   </component>
@@ -357,36 +169,30 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
+        <option name="dedicatedModuleDir" value="C:\Users\Administrator\Desktop\LalaNews\server\lalaNews\EurekaServer" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="lalaNews" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="230" />
-    <option name="y" value="80" />
-    <option name="width" value="1410" />
-    <option name="height" value="850" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-73" />
+    <option name="y" value="21" />
+    <option name="width" value="1795" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -397,54 +203,72 @@
             <path>
               <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
               <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchServer" type="462c0819:PsiDirectoryNode" />
+              <item name="UserServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
               <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchServer" type="462c0819:PsiDirectoryNode" />
+              <item name="UserServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
               <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchServer" type="462c0819:PsiDirectoryNode" />
+              <item name="UserServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
               <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchServer" type="462c0819:PsiDirectoryNode" />
+              <item name="UserServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lalateam" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
               <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchServer" type="462c0819:PsiDirectoryNode" />
+              <item name="UserServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lalateam" type="462c0819:PsiDirectoryNode" />
+              <item name="lalatem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
+              <item name="UserServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lalatem" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
+              <item name="UserServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lalatem" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
+              <item name="UserServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lalatem" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -456,27 +280,13 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584552557949" />
-    <property name="last_opened_file_path" value="D:/share/springcolud" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584783190751" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/EurekaServer" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\LalaNews\server\lalaNews\NewsServer" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\LalaNews\server\lalaNews" />
-      <recent name="C:\Users\Administrator\Desktop\LalaNews\server\lalaNews\Zuul" />
-      <recent name="C:\Users\Administrator\Desktop\LalaNews\server\lalaNews\UserServer" />
-      <recent name="C:\Users\Administrator\Desktop\LalaNews\server\lalaNews\TagServer" />
-      <recent name="C:\Users\Administrator\Desktop\LalaNews\server\lalaNews\SearchServer" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -494,30 +304,10 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.22677596" />
   </component>
   <component name="RunManager" selected="Spring Boot.UserApplication">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.edu.cqcet.teamlala.Test" />
-      <module name="JSON" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.cqcet.teamlala.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CommentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="CommentServer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.cqcet.teamlala.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.cqcet.teamlala.CommentApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -526,13 +316,6 @@
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="EurekaServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.cqcet.teamlala.EurekaApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HystrixApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Hystrix" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.cqcet.teamlala.HystrixApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -551,206 +334,101 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearcchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SearchServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cq.edu.cqcet.lalateam.SearchApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TagServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="TagServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="TagServer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.cqcet.teamlala.CommetnServiceImpl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.cqcet.teamlala.TagServer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="UserServer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.cqcet.lalatem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.cqcet.lalatem.UserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Zuul" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.eud.cqcet.teamlala.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.eud.cqcet.teamlala.ZuulApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.JSONApplication" />
-      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.SearchApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.CommentApplication" />
       <item itemvalue="Spring Boot.NewServer" />
-      <item itemvalue="Spring Boot.HystrixApplication" />
-      <item itemvalue="Spring Boot.SearcchApplication" />
+      <item itemvalue="Spring Boot.JSONApplication" />
       <item itemvalue="Spring Boot.TagServer" />
       <item itemvalue="Spring Boot.ZuulApplication" />
-      <item itemvalue="Spring Boot.CommentApplication" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Spring Boot.CommentApplication" />
-        <item itemvalue="Spring Boot.ZuulApplication" />
-        <item itemvalue="Spring Boot.TagServer" />
-        <item itemvalue="Application.Test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a67fe456-3628-4800-9690-fa3003e806a5" name="Default Changelist" comment="" />
-      <created>1579504996216</created>
+      <changelist id="ee6e9d9e-9898-44a7-99c7-becf6d60f7b3" name="Default Changelist" comment="" />
+      <created>1584760267648</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579504996216</updated>
-      <workItem from="1579505001427" duration="3940000" />
-      <workItem from="1579509225935" duration="8820000" />
-      <workItem from="1579578258810" duration="10933000" />
-      <workItem from="1579595094132" duration="10092000" />
-      <workItem from="1579615847933" duration="3569000" />
-      <workItem from="1579660957923" duration="1840000" />
-      <workItem from="1579697295593" duration="7540000" />
-      <workItem from="1579751192981" duration="30995000" />
-      <workItem from="1579837795355" duration="13811000" />
-      <workItem from="1579926776718" duration="321000" />
-      <workItem from="1579927150327" duration="4416000" />
-      <workItem from="1580028132094" duration="247000" />
-      <workItem from="1580116658115" duration="1879000" />
-      <workItem from="1580132461028" duration="1240000" />
-      <workItem from="1580172189081" duration="86000" />
-      <workItem from="1580284871557" duration="4349000" />
-      <workItem from="1580351685120" duration="1293000" />
-      <workItem from="1580353025559" duration="14113000" />
-      <workItem from="1583067764017" duration="131000" />
-      <workItem from="1584533962433" duration="9715000" />
+      <updated>1584760267648</updated>
+      <workItem from="1584760273363" duration="14354000" />
     </task>
-    <task id="LOCAL-00001" summary="lalaNews first commit">
-      <created>1579506404220</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1579506404220</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129330000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="14354000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-58" y="17" width="1436" height="844" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2077748" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3018868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.41560283" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.4992908" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.38297874" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.37730497" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32907802" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32907802" />
-      <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.12765957" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" visible="true" weight="0.36146274" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50067025" side_tool="true" weight="0.43120566" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49932975" weight="0.43120566" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.1582003" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" weight="0.3297587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49227372" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49893844" weight="0.20375335" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50772625" side_tool="true" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2707775" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.41560283" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.5460993" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.38297874" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.37730497" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32907802" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32907802" />
-      <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.44113475" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49227372" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49893844" visible="true" weight="0.07439678" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50772625" side_tool="true" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -758,391 +436,131 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-    <MESSAGE value="lalaNews first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="lalaNews first commit" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CommentServer/pom.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+        </state>
+      </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Zuul/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Zuul/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SearchServer/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="36" column="76" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SearchServer/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TagServer/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TagServer/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EurekaServer/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SearchServer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="-26">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SearchServer/src/main/java/cq/edu/cqcet/lalateam/SearchApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="78">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TagServer/src/main/java/cn/edu/cqcet/teamlala/TagServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TagServer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1014">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/po/CollectNews.java" />
-    <entry file="file://$PROJECT_DIR$/UserServer/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/UserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/po/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/po/Collect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/service/NewsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserCollectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserCollectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Zuul/src/main/java/cn/eud/cqcet/teamlala/Yes.java" />
     <entry file="file://$PROJECT_DIR$/EurekaServer/src/main/java/cn/edu/cqcet/teamlala/EurekaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="140">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#347#348#0" expanded="true" />
             <element signature="e#414#415#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/NewServer.java">
+    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="151">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1352">
-          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/mapper/NewsMapper.java">
+    <entry file="file://$PROJECT_DIR$/NewsServer/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/service/CommentService.java">
+    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/News.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/po/Comment.java">
+    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserServer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="33" />
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/controller/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/mapper/CommentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/NewsDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/mapper/NewsDetailMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="e#319#793#1" />
-            <element signature="e#880#1156#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/service/NewsDetailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/serviceImpl/NewsDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-          <folding>
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="48" column="54" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
-          <folding>
-            <element signature="method#getContentByNewsId#0;class#NewsDetailController#0" />
-          </folding>
-        </state>
-      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TagServer/src/main/java/cn/edu/cqcet/teamlala/contorller/TagController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="287">
+          <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserCollectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="79" column="77" selection-start-line="79" selection-start-column="72" selection-end-line="79" selection-end-column="77" />
           <folding>
-            <element signature="method#getTagNormal#0;class#TagControlle#0" />
+            <element signature="method#getUserCollectByOpenId#0;class#UserCollectController#0" />
+            <element signature="method#collectClick#0;class#UserCollectController#0" />
+            <element signature="method#insertNewsId2Collect#0;class#UserCollectController#0" />
+            <element signature="method#deleteNewsIdFromCollect#0;class#UserCollectController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TagServer/src/main/java/cn/edu/cqcet/teamlala/mapper/TagMapper.java">
+    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        <state relative-caret-position="278">
+          <caret line="72" column="32" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="32" />
+          <folding>
+            <element signature="method#getUserCollectByOpenId#0;class#UserCollectServiceImpl#0" />
+            <element signature="method#getNewsIsCollect#0;class#UserCollectServiceImpl#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SearchServer/src/main/java/cq/edu/cqcet/lalateam/controller/SearchController.java">
+    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserCollectService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="266">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="39" column="103" selection-start-line="39" selection-start-column="103" selection-end-line="39" selection-end-column="103" />
         </state>
       </provider>
     </entry>
@@ -1163,7 +581,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring (TagServer)|Spring</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1203,7 +621,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1211,7 +628,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
