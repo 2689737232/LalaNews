@@ -24,6 +24,8 @@ Component({
   methods: {
     // 触发自定义事件，将评论信息传到newsDetails页面
     showReview(msg) {
+      // console.log(msg,"inner");
+      
       this.triggerEvent("showReview", msg);
     }
   }

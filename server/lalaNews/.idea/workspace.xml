@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee6e9d9e-9898-44a7-99c7-becf6d60f7b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommentApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/mapper/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommentServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CommentServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/mapper/NewsDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/mapper/NewsDetailMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/controller/NewsDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/NewsServer/target/classes/cn/edu/cqcet/teamlala/controller/NewsDetailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/serviceImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/UserServer/target/classes/cn/edu/cqcet/lalatem/serviceImpl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/index/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/requestManager/requestManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/requestManager/requestManager.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/NewsServer/target/" />
     <ignored path="$PROJECT_DIR$/CommentServer/target/" />
@@ -47,7 +23,7 @@
     <session id="-1158647121">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.7" value="1" />
@@ -93,7 +69,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/controller/CommentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="79">
               <caret line="21" column="50" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="50" />
             </state>
           </provider>
@@ -178,7 +154,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-75" />
     <option name="y" value="20" />
     <option name="width" value="1795" />
@@ -269,7 +245,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584970431749" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584971826443" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/EurekaServer" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -379,18 +355,17 @@
       <updated>1584760267648</updated>
       <workItem from="1584760273363" duration="14354000" />
       <workItem from="1584787468434" duration="3141000" />
-      <workItem from="1584949824727" duration="11003000" />
+      <workItem from="1584949824727" duration="11646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28498000" />
+    <option name="totallyTimeSpent" value="29141000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-60" y="16" width="1436" height="844" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24128686" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26124817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -413,7 +388,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49932975" weight="0.5900709" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49932975" visible="true" weight="0.5850914" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -786,7 +761,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/controller/CommentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="79">
           <caret line="21" column="50" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="50" />
         </state>
       </provider>

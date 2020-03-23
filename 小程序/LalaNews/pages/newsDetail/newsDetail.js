@@ -27,6 +27,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 显示分享按钮
+    wx.showShareMenu({
+
+    })
     const newsId = toolsObj.getGlobalData("newsId");
     this.setData({
       newsId: newsId
@@ -45,11 +49,13 @@ Page({
   // 显示回复的输入框
   showReview(msg) {
     let commetnId = msg.detail.detail.commentId,
-      userName = msg.detail.detail.userName;
+      userName = msg.detail.detail.userName,
+      ancestorId = msg.detail.detail.ancestorId;
     this.setData({
       review: userName,
       isReview: true,
-      parentId: commetnId
+      parentId: commetnId,
+      ancestorId: ancestorId
     })
   },
   // 点击了发送后
@@ -58,6 +64,7 @@ Page({
     let parentId = this.data.parentId,
       context = e.detail.value,
       newsId = this.data.newsId,
+      ancestorId = this.data.ancestorId,
       openId = toolsObj.getGlobalData("openId"),
       self = this;
     // 隐藏输入框
@@ -67,7 +74,7 @@ Page({
     // 如果用户已经登录才可以进行评论
     if (openId) {
       // 发送请求
-      requestManager.addComment(openId, newsId, context, parentId).then((e) => {
+      requestManager.addComment(openId, newsId, context, parentId, ancestorId).then((e) => {
         // 如果为1表示插入成功
         if (1) {
           self.showInfo("评论成功", "success")
@@ -111,6 +118,7 @@ Page({
   // 刷新评论
   reflashComment() {
     let self = this;
+    // 重新请求获取评论
     requestManager.getNewsCommentsByNewsId(this.data.newsId).then((e) => {
       console.log(e);
       let _newsDetail = this.data.newsDetail;
@@ -119,6 +127,15 @@ Page({
         newsDetail: _newsDetail
       })
     })
+    // 更新显示条数
+  },
+  // 分享方法
+  onShareAppMessage() {
+    let url = encodeURIComponent('/pages/newsDetail/newsDetail?newsId=' + this.data.newsId);
+    return {
+      title: "lala新闻",
+      path: `/pages/index/index?url=${url}`
+    }
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

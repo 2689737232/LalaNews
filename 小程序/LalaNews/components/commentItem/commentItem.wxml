@@ -5,6 +5,7 @@
 	 class="comment-main"
 	 data-commentId="{{commentItem.commentId}}"
 	 data-username="{{commentItem.name}}"
+	 data-ancestorId="{{commentItem.commentId}}"
 	 bind:tap="review"
 	>
 		<view class="left-user-icon">
@@ -15,11 +16,12 @@
 			<text class="user-comment">{{commentItem.comment}}</text>
 		</view>
 	</view>
-	<!--  每一个评论的子列表 -->
+	<!-- 每一个评论的子列表 -->
 	<view class="commetn-children-list ">
 		<!-- 只渲染3行，超出显示查看更多 -->
 		<block wx:for="{{commentItem.chirden.length > 3? [commentItem.chirden[0],commentItem.chirden[1],commentItem.chirden[2]] : commentItem.chirden}}" wx:key="item.commentId">
 			<view
+			 data-ancestorId="{{commentItem.commentId}}"
 			 class="commetn-row"
 			 data-commentId="{{item.commentId}}"
 			 data-username="{{item.name}}"
@@ -36,6 +38,7 @@
 		<block wx:if="{{isShowMore}}">
 			<block wx:for="{{moreComment}}" wx:key="item.commentId">
 				<view
+				 data-ancestorId="{{commentItem.commentId}}"
 				 class="commetn-row"
 				 data-commentId="{{item.commentId}}"
 				 data-username="{{item.name}}"

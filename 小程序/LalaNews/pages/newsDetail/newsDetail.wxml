@@ -23,13 +23,12 @@
 	</view>
 </view>
 <view class="share-box">
-	<view class="share">
-		<image class="share-image" src="/src/image/分享.png" />
-		<text class="text">分享一下</text>
-	</view>
+	<!-- <view class="share" bind:tap="share">
+		<butto class="share-btn" open-type='share'>分享</butto>
+	</view> -->
 </view>
 <!-- 推荐列表 -->
-<view class="recommend-list" />
+<!-- <view class="recommend-list" /> -->
 <!-- 评论列表 -->
 <view class="comment-box">
 	<!-- 评论列表 -->

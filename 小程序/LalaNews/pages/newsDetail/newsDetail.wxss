@@ -115,6 +115,7 @@ page {
 
 .share-box {
     width: 100%;
+    margin-bottom: 30rpx;
 }
 .share {
     border-radius: 45rpx;
@@ -147,4 +148,8 @@ page {
     width: 100%;
     box-sizing: border-box;
     padding: 0 10rpx;
+}
+.share-btn{
+    width: 100%;
+    text-align: center;
 }
