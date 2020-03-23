@@ -2,6 +2,7 @@
 	<view class="image-grounp">
 		<image
 		 wx:for="{{newsItem.images}}"
+		 wx:key="this"
 		 class="image-item"
 		 src="{{item}}"
 		 lazy-load="false"

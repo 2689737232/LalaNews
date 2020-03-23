@@ -1,6 +1,11 @@
 <view class="wrapper" bind:tap="toNewsDetail" data-newsId="{{newsItem.newsId}}">
 	<view class="image-wrapper item">
-		<image class="news-image" wx:for="{{newsItem.images}}" src="{{item}}" />
+		<image
+		 class="news-image"
+		 wx:key="{{newsItem}}"
+		 wx:for="{{newsItem.images}}"
+		 src="{{item}}"
+		/>
 	</view>
 	<view class="text-box item">{{newsItem.title}}</view>
 	<view class="bottom-box item">

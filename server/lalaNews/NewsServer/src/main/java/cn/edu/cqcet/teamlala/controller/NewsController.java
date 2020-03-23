@@ -44,7 +44,6 @@ public class NewsController {
         List<News> newsList = new ArrayList<>();
         // 循环id列表获取新闻
         for (Integer id : idList) {
-            System.out.println(id);
             News news = this.getNewsByNewsId(id);
             // 初始化images列表
             news.setImages(new ArrayList<>());

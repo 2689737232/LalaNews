@@ -11,3 +11,10 @@
     text-align: center;
     line-height: 90rpx;
 }
+.load-over{
+    margin-top: 15rpx;
+    height: 35rpx;
+    line-height: 35rpx;
+    text-align: center;
+    color: black;
+}

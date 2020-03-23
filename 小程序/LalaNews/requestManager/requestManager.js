@@ -97,7 +97,6 @@ function getTagList(openId) {
 // 通过tagId获取新闻列表数据 num为获取数据数量
 function getNewsListByTagId(tagId, start, end) {
   const _url = urlObj.getNewsListByTagIdTest + tagId + "/" + start + "/" + end;
-  console.log(_url);
   const resultPromise = new Promise((res, rej) => {
     // 请求tagId
     wx.request({

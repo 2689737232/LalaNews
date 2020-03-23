@@ -16,9 +16,7 @@ Component({
 
   },
   observers: {
-    commentList: (e) => {
-      console.log(e,'评论数据');
-    }
+    
   },
   /**
    * 组件的方法列表

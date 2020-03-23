@@ -41,7 +41,6 @@ Page({
   showReview(msg) {
     let commetnId = msg.detail.detail.commetnId,
       userName = msg.detail.detail.userName;
-    console.log(msg);
     this.setData({
       review: userName,
       isReview: true
@@ -65,7 +64,6 @@ Page({
     let promise = requestManager.getNewsIsCollect(openId, newsId),
       self = this;
     promise.then((res) => {
-      console.log(res);
       self.setData({
         isCollect: res.msg.data
       })

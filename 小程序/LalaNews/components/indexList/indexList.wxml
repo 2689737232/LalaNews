@@ -1,7 +1,12 @@
 <!-- 首页新闻滚动列表 -->
-<view class="scroll-container">
+<scroll-view
+ scroll-y="true"
+ style="height:1200rpx;"
+ bindscrolltolower="onReachBottom"
+ class="scroll-container"
+>
 	<!-- 循环每一项数据显示新闻 -->
-	<block wx:for="{{newsList}}">
+	<block wx:for="{{newsList}}" wx:key="item.newsId">
 		<!-- 普通新闻 -->
 		<block wx:if="{{item.type == 1}}">
 			<normal-news newsItem="{{item}}" class="news-item normal-news" />
@@ -15,8 +20,11 @@
 			<multi-image newsItem="{{item}}" class="news-item multi-image" />
 		</block>
 	</block>
-</view>
-<view class="foot">
-	<load-animate class="{{isLoadMore}}" />
-</view>
+	<view class="foot">
+		<load-animate wx:if="{{isLoading}}" />
+		<view wx:if="{{isOver}}" class="load-over">
+			加载完毕了哦~~
+		</view>
+	</view>
+</scroll-view>
 

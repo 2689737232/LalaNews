@@ -7,9 +7,6 @@ Component({
     newsItem: Object
   },
   observers: {
-    "newsItem": (r) => {
-      console.log(r.videoUrl);
-    }
   },
   /**
    * 组件的初始数据

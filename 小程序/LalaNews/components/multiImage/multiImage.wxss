@@ -4,6 +4,7 @@
     padding: 15rpx 5rpx;
     width: 100%;
     height: 600rpx;
+    margin-top: 15rpx;
 }
 
 .image-grounp {

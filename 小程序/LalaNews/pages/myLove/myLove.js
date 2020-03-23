@@ -15,27 +15,28 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log("收藏页面重新加载");
     let openId = options.openId;
     this.setData({
       openId: openId
     })
-    this.getUserCollect(openId,0,5);
+    this.getUserCollect(openId, 0, 5);
   },
   // 获取用户收藏列表
-  getUserCollect(openId,start,end){
-    let promise = getUserCollectByOpenId(openId,start,end);
+  getUserCollect(openId, start, end) {
+    let promise = getUserCollectByOpenId(openId, start, end);
     let self = this;
-    promise.then((res)=>{
-       console.log(res);
-       let collectList = res.msg.data;
-       self.setData({
+    promise.then((res) => {
+      console.log(res);
+      let collectList = res.msg.data;
+      self.setData({
         collectList: collectList
-       })
+      })
     })
   },
   // 获取用户的收藏新闻列表
-  getUserLoveList(){
-     
+  getUserLoveList() {
+
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -28,8 +28,10 @@ public class UserCollectServiceImpl implements UserCollectService {
         if(end > collects.size()  && collects.size() > 0){
             end = collects.size();
         }
-        for(int i = start;i<end;i++){
-            newsDetails.add(restTemplate.getForObject("http://192.168.56.1:8050/news-server/news/getCollectNewsByNewsId/" + collects.get(i).getNewsId(),News.class));
+        if(collects.size() != 0){
+            for(int i = start;i<end;i++){
+                newsDetails.add(restTemplate.getForObject("http://192.168.56.1:8050/news-server/news/getCollectNewsByNewsId/" + collects.get(i).getNewsId(),News.class));
+            }
         }
         return newsDetails;
     }
