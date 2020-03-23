@@ -18,6 +18,8 @@ Page({
     isLoadOver: false
   },
   onLoad: function () {
+    console.log(tools.toolsObj.getGlobalData("openId"),"openid在这里******");
+    
     // 初始化标题栏
     this.initNavigationBar();
     // 获取index所有数据

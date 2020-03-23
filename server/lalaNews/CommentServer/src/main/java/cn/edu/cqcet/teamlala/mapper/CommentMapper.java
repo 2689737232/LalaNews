@@ -1,6 +1,7 @@
 package cn.edu.cqcet.teamlala.mapper;
 
 import cn.edu.cqcet.teamlala.po.Comment;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -27,4 +28,11 @@ public interface CommentMapper {
     @Select("select u.user_name as parentNam\n" +
             "from comment as c,user as u where u.id = c.user_id and c.comment_id = #{parentId};")
     String getParentName(Integer parentId);
+    // 添加一条评论
+    @Insert("insert into comment (user_id, news_id, comment_text, parent_id, create_time,\n"
+            +" update_time, ancestor_id) VALUES (${arg0},${arg1},'${arg2}',${arg3},now(),now(),${arg4})")
+    Integer addComment(Long userId,String newsId,String context,Integer parentId,Integer ancestorId);
+    // 通过openId查找userId
+    @Select("select id from  user where open_id = '${openId}'")
+    Long getUserIdByOpenId(String openId);
 }

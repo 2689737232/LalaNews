@@ -43,7 +43,6 @@ Component({
     },
     // 回复某一个评论
     review(msg) {
-      console.log(msg);
       let commentId = msg.currentTarget.dataset.commentid,
         userName = msg.currentTarget.dataset.username;
       this.triggerEvent("showReview", { commentId: commentId, userName, userName });

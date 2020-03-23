@@ -18,14 +18,19 @@ Page({
     },
     review: "yes",
     isReview: false,
-    isCollect: false
+    isCollect: false,
+    // 标记用户回复评论，是针对文章还是用户进行评论。 -1表示文章
+    parentId: -1,
+    newsId: null,
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     const newsId = toolsObj.getGlobalData("newsId");
+    this.setData({
+      newsId: newsId
+    })
     // 通过新闻id获取新闻详情
     let resultPromise = requestManager.getNewsDetailById(newsId);
     resultPromise.then((data) => {
@@ -39,22 +44,41 @@ Page({
   },
   // 显示回复的输入框
   showReview(msg) {
-    let commetnId = msg.detail.detail.commetnId,
+    let commetnId = msg.detail.detail.commentId,
       userName = msg.detail.detail.userName;
     this.setData({
       review: userName,
-      isReview: true
+      isReview: true,
+      parentId: commetnId
     })
   },
   // 点击了发送后
-  bindconfirm() {
+  bindconfirm(e) {
+    // 得到对谁评论，和评论信息。
+    let parentId = this.data.parentId,
+      context = e.detail.value,
+      newsId = this.data.newsId,
+      openId = toolsObj.getGlobalData("openId"),
+      self = this;
+    // 隐藏输入框
     this.setData({
       isReview: false
     })
-    // 发送请求
-    /*
-      ********* TODO 
-     */
+    // 如果用户已经登录才可以进行评论
+    if (openId) {
+      // 发送请求
+      requestManager.addComment(openId, newsId, context, parentId).then((e) => {
+        // 如果为1表示插入成功
+        if (1) {
+          self.showInfo("评论成功", "success")
+          // 重新设置，重新获取评论
+          self.reflashComment();
+        }
+      });
+    } else {
+      self.showInfo("你还没有登录呢")
+    }
+
   },
   // 获取本新闻是否被用户收藏
   isCollect() {
@@ -69,28 +93,32 @@ Page({
       })
     })
   },
-  // 收藏按钮点击
-  clickCollect() {
-    // 从全局上获取openId 和 newsId
-    let openId = getGlobalData("openId"),
-      newsId = getGlobalData("newsId"),
-      self = this;
-    // 如果没有登录，提示登录
-    if (openId) {
-      let promise = requestManager.clickCollect(openId, newsId);
-      // 根据后端返回结果设置是否收藏。 用于图片的切换
-      promise.then((e) => {
-        self.setData({
-          isCollect: e.msg.data == 1 
-        })
+  // 评论按钮点击
+  comment() {
+    this.setData({
+      review: "",
+      isReview: true,
+      parentId: -1
+    })
+  },
+  // 提示信息
+  showInfo(info, _icon = "none") {
+    wx.showToast({
+      title: info,
+      icon: _icon
+    })
+  },
+  // 刷新评论
+  reflashComment() {
+    let self = this;
+    requestManager.getNewsCommentsByNewsId(this.data.newsId).then((e) => {
+      console.log(e);
+      let _newsDetail = this.data.newsDetail;
+      _newsDetail.comments = e;
+      self.setData({
+        newsDetail: _newsDetail
       })
-    } else {
-      wx.showToast({
-        title: "你还没有登录!",
-        mask: true,
-        icon: "none"
-      })
-    }
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

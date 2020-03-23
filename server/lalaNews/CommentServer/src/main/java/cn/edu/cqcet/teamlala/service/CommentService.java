@@ -7,4 +7,6 @@ import java.util.List;
 public interface CommentService {
     List<Comment> getCommentsByNewsId(Integer newsId);
     String getParentName(Integer parentId);
+    Integer addComment(Long userId,String newsId,String context,Integer parentId,Integer ancestorId);
+    Long getUserIdByOpenId(String openId);
 }

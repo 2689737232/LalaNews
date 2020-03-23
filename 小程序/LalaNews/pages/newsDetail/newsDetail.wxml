@@ -10,6 +10,7 @@
 			</view>
 		</view>
 	</view>
+	<!-- 根据内容的position进行排列 -->
 	<view class="news-description-box">
 		<block wx:for="{{newsDetail.description}}" wx:key="{{item}}">
 			<block wx:if="{{item.paragraphType == 1}}">
@@ -48,7 +49,7 @@
 	</view>
 	<view class="middle-line" />
 	<view class="left-comment">
-		<image class="comment-icon comment" src="{{imgArr.comment}}" />
+		<image class="comment-icon comment" bind:tap="comment" src="{{imgArr.comment}}" />
 		{{newsDetail.commentNumber}}
 	</view>
 </view>

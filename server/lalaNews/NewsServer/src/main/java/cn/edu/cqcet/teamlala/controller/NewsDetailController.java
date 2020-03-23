@@ -1,9 +1,11 @@
 package cn.edu.cqcet.teamlala.controller;
 
+
 import cn.edu.cqcet.teamlala.JsonFormat;
 import cn.edu.cqcet.teamlala.MyJson;
 import cn.edu.cqcet.teamlala.po.Comment;
 import cn.edu.cqcet.teamlala.po.NewsDetail;
+import cn.edu.cqcet.teamlala.po.User;
 import cn.edu.cqcet.teamlala.po.Paragraph;
 import cn.edu.cqcet.teamlala.service.NewsDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import java.awt.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/newsDetail")
@@ -56,6 +55,14 @@ public class NewsDetailController {
         paragraphList = this.newsDetailService.getContentByNewsId(newsId);
         return paragraphList;
     }
-    // 通过新闻id获取评论数
+    // 添加评论
+    @RequestMapping("/addComment/{openId}/{newsId}/{context}/{parentId}/")
+    public Integer addComment(@PathVariable String openId,
+                              @PathVariable Integer newsId,
+                              @PathVariable String context,
+                              @PathVariable Integer parentId){
+        User user = restTemplate.getForObject("http://192.168.59.3:8050/comment-server/comment/getCommentsByNewsId/" + newsId, User.class);
+        return 1;
+    }
 
 }

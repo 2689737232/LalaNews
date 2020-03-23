@@ -36,4 +36,9 @@ public class UserController {
                           String updateTime){
          this.userService.addUser(userName,collectId,createTime,updateTime,userIcon,opeId);
     }
+    // 通过openId获取用户Id
+    @RequestMapping("/getUserIdByOpenId/{openId}")
+    public String getUserIdByOpenId(@PathVariable String openId){
+        return this.userService.getUserIdByOpenId(openId);
+    }
 }

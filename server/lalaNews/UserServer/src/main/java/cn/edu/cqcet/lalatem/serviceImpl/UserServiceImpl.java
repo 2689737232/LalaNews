@@ -19,4 +19,10 @@ public class UserServiceImpl  implements UserService {
     public void addUser(String userName, Long collectId,String createTime,String updateTime, String userIcon, String opeId) {
          userMapper.addUser(userName,collectId,userIcon,opeId,createTime,updateTime);
     }
+
+    @Override
+    public String getUserIdByOpenId(String openId) {
+        return userMapper.getUserIdByOpenId(openId);
+    }
+
 }

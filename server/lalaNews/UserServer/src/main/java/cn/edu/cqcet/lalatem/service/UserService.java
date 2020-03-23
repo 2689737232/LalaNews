@@ -7,4 +7,6 @@ public interface UserService {
     User getUserByOpenId(String openId);
     // 添加用户
     void addUser(String userName,Long collectId,String createTime,String updateTime,String userIcon,String opeId);
+   // 根据user openId获取用户
+    String getUserIdByOpenId(String openId);
 }

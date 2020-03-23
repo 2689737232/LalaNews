@@ -33,4 +33,6 @@ public interface NewsDetailMapper {
     // 通过新闻id获取评论数量
     @Select("select count(comment_id) from comment where comment.news_id = #{newsId};")
     int  getCommentNumber(Integer newsId);
+
+
 }

@@ -26,7 +26,11 @@ const devURL = "http://192.168.59.3:8050/",
     // 删除用户指定的tag
     deleteTag = devURL + "user-server/userCollect/deleteUserTag/",
     // 用户添加喜欢的tag
-    insertUserTag = devURL + "user-server/userCollect/insertUserTag/"
+    insertUserTag = devURL + "user-server/userCollect/insertUserTag/",
+    // 添加评论
+    addComment = devURL + "/comment-server/comment/addComment/",
+    // 通过newsId获取评论列表
+    getNewsCommentsByNewsId = devURL + "/comment-server/comment/getCommentsByNewsId/"
 const urlObj = {
     // devURL,
     // tagNewsList,
@@ -43,7 +47,9 @@ const urlObj = {
     clickCollect,
     userTag,
     deleteTag,
-    insertUserTag
+    insertUserTag,
+    addComment,
+    getNewsCommentsByNewsId
 }
 
 module.exports = {

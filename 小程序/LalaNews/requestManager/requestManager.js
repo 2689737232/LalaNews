@@ -501,6 +501,45 @@ function insertUserTag(openId, tagId) {
     })
   })
 }
+// 通过新闻id获取评论
+function getNewsCommentsByNewsId(newsId) {
+  let url = urlObj.getNewsCommentsByNewsId + newsId;
+  return new Promise((res, rej) => {
+    wx.request({
+      url: url,
+      dataType: JSON,
+      success(r) {
+        let data = JSON.parse(r.data);
+        res(data)
+      },
+      fail(e) {
+        console.log(e);
+        rej(e);
+      }
+    })
+  })
+}
+// 添加评论
+function addComment(openId, newsId, context, parentId, ancestorId = 0) {
+  let url = urlObj.addComment + openId + "/" + newsId + "/" + context + "/" + parentId + "/" + ancestorId;
+  return new Promise((res, rej) => {
+    wx.request({
+      url: url,
+      dataType: JSON,
+      method: "post",
+      header: { 'content-type': 'application/x-www-form-urlencoded;charset=utf-8' },
+      scriptCharset: 'utf-8',
+      success(r) {
+        let data = JSON.parse(r.data);
+        res(data)
+      },
+      fail(e) {
+        console.log(e);
+        rej(e);
+      }
+    })
+  })
+}
 module.exports = {
   getNewsListByTagId,
   getNewsDetailById,
@@ -511,5 +550,7 @@ module.exports = {
   clickCollect,
   getUserTag,
   deleteUserTagByTagId,
-  insertUserTag
+  insertUserTag,
+  addComment,
+  getNewsCommentsByNewsId
 }

@@ -17,5 +17,7 @@ public interface UserMapper {
             "VALUES \n" +
             "('${arg0}',null,'${arg2}','${arg3}','${arg4}','${arg5}')")
     String addUser(String userName,Long collectId,String createTime,String updateTime,String userIcon,String opeId);
-
+    // 通过openId获取user id
+    @Select("select id from  user where open_id = '${openId}'")
+    String getUserIdByOpenId(String openId);
 }
