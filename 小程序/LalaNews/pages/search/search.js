@@ -11,6 +11,10 @@ Page({
   data: {
     // 搜索框是否聚焦，聚焦后显示清空按钮
     isFoucs: false,
+    // 是否点击搜索
+    isSearch: false,
+    // 用于存放搜索结果的推荐下标
+    searchListIndex: [],
     // 输入框的初始值
     value: "",
     // 已经添加的列表
@@ -54,6 +58,7 @@ Page({
       })
     })
 
+
   },
   // 推荐列表，每一个标签触摸开始
   itemTouchStart(msg) {
@@ -84,8 +89,6 @@ Page({
         result = true
       }
     });
-
-
     // 如果用户存在并且这一项不存在的话进行添加
     if (openId && !result) {
       // 提交到后端，根据数据。在页面上进行添加
@@ -101,6 +104,7 @@ Page({
       // 如果这一项不在已经添加的列表中，那么就添加进列表
       result ? null : _alreadyAdd.push(item);
     }
+
     self.setData({
       alreadyAdd: _alreadyAdd
     });
@@ -171,13 +175,51 @@ Page({
     })
   },
   // 搜索框点击确认
-  confirm() {
-    console.log("确认");
+  confirm(e) {
+    let searchListIndex = [],
+      // 搜索关键字
+      key = e.detail.value,
+      recommendList = this.data.recommendList,
+      self = this;
+    // 循环标签列表，添加符合的索引
+    recommendList.forEach(function (ele, index) {
+      if (ele.tagName.indexOf(key) != -1) {
+        searchListIndex.push(index)
+        self.setData({
+          searchListIndex: searchListIndex
+        })
+      }
+    })
+    console.log(searchListIndex);
+
+    // 显示搜索框
+    this.setData({
+      isSearch: true
+    })
   },
   // 点击清除按钮，清空搜索框
   clear() {
     this.setData({
       value: ""
+    })
+  },
+  // 点击搜索结果
+  searchItemClick(e) {
+    let index = e.currentTarget.dataset.index,
+      recommendList = this.data.recommendList,
+      alreadyAdd = this.data.alreadyAdd,
+      flag = true;
+
+    // 判断列表里面是否有这一项
+    alreadyAdd.forEach(function (ele, _index) {
+      if (ele.tagName == recommendList[index].tagName) {
+        flag = false
+      }
+    })
+    flag ? alreadyAdd.push(this.data.recommendList[index]) : undefined;
+    this.setData({
+      alreadyAdd: alreadyAdd,
+      isSearch: false
     })
   },
   // 获取已经登录的用户的喜欢的标签

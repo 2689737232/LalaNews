@@ -11,6 +11,13 @@
     width: 90%;
     display: flex;
 }
+.search-list{
+    border-radius: 35rpx;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 50rpx;
+    border: 1px solid rgb(231, 230, 231);
+}
 .text{
     visibility: hidden;
     font-weight: bold;
@@ -100,3 +107,13 @@
     line-height: 35rpx;
 }
 
+.search-item{
+    margin-top: 15rpx;
+    width: 100%;
+    min-height: 45rpx;
+    line-height: 45rpx;
+    text-indent: 50rpx;
+}
+.search-item:last-of-type{
+    margin-bottom: 15rpx;
+}

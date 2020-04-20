@@ -6,14 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CommentServer" />
-        <module name="EurekaServer" />
-        <module name="JSON" />
         <module name="NewsServer" />
-        <module name="SearchServer" />
         <module name="TagServer" />
-        <module name="UserServer" />
         <module name="Zuul" />
+        <module name="UserServer" />
+        <module name="EurekaServer" />
+        <module name="CommentServer" />
+        <module name="JSON" />
+        <module name="SearchServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

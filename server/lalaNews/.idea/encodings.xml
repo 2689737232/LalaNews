@@ -3,12 +3,20 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CommentServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CommentServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EurekaServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EurekaServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JSON" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JSON/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NewsServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NewsServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SearchServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SearchServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/TagServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TagServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/UserServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UserServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Zuul/src/main/java" charset="UTF-8" />
   </component>
 </project>

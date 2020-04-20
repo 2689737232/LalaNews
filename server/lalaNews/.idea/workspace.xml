@@ -2,93 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee6e9d9e-9898-44a7-99c7-becf6d60f7b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaServer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchServer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SearchServer/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TagServer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/TagServer/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zuul/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Zuul/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/newsDetail/newsDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../../小程序/LalaNews/pages/search/search.wxss" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/NewsServer/target/" />
-    <ignored path="$PROJECT_DIR$/CommentServer/target/" />
-    <ignored path="$PROJECT_DIR$/SearchServer/target/" />
-    <ignored path="$PROJECT_DIR$/JSON/target/" />
-    <ignored path="$PROJECT_DIR$/Zuul/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/TagServer/target/" />
-    <ignored path="$PROJECT_DIR$/UserServer/target/" />
-    <ignored path="$PROJECT_DIR$/EurekaServer/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1158647121">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="Dockerfile" value="1" />
-          <entry key="java" value="101" />
-          <entry key="xml" value="7" />
-          <entry key="yml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Dockerfile" value="1" />
-          <entry key="JAVA" value="101" />
-          <entry key="XML" value="7" />
-          <entry key="YAML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="7" />
-          <entry key="java" value="2705" />
-          <entry key="xml" value="24" />
-          <entry key="yml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="2705" />
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="XML" value="24" />
-          <entry key="YAML" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/controller/CommentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="907">
-              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-              <folding>
-                <element signature="e#2284#2285#0" expanded="true" />
-                <element signature="e#2346#2347#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,41 +31,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/EurekaServer/src/main/java/cn/edu/cqcet/teamlala/EurekaApplication.java" />
-        <option value="$PROJECT_DIR$/UserServer/pom.xml" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserCollectService.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserCollectController.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsController.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/mapper/NewsDetailMapper.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserService.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/NewsServer/pom.xml" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/NewsUser.java" />
-        <option value="$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsDetailController.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/po/CommentUser.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommentApplication.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/po/User.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/mapper/CommentMapper.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/service/CommentService.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/controller/CommentController.java" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -148,93 +49,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-75" />
-    <option name="y" value="20" />
-    <option name="width" value="1795" />
-    <option name="height" value="1055" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="CommentServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="CommentServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="CommentServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="CommentServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="CommentServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teamlala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="CommentServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teamlala" type="462c0819:PsiDirectoryNode" />
-              <item name="CommetnServiceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lalaNews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lalaNews" type="462c0819:PsiDirectoryNode" />
-              <item name="CommentServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teamlala" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1acEYwSmQCAbPfcl4hYTzcoCX8j" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -243,15 +61,18 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584971826443" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/EurekaServer" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="D:/IdeaProject/spring1" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.32692307" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="background.image.plus" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -264,18 +85,8 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommentApplication">
+  <component name="RunManager" selected="Spring Boot.ZuulApplication">
     <configuration name="CommentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="CommentServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.cqcet.teamlala.CommentApplication" />
@@ -356,490 +167,60 @@
       <workItem from="1584760273363" duration="14354000" />
       <workItem from="1584787468434" duration="3141000" />
       <workItem from="1584949824727" duration="11646000" />
+      <workItem from="1587026534133" duration="1001000" />
+      <workItem from="1587027560563" duration="454000" />
+      <workItem from="1587277123473" duration="2631000" />
+      <workItem from="1587297495305" duration="713000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29141000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-60" y="16" width="1436" height="844" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26124817" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.53758866" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932975" weight="0.28085107" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32907802" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49932975" visible="true" weight="0.5850914" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.13873994" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24798928" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.43120566" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932975" weight="0.28085107" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.2822695" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.13873994" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SearchServer/src/main/java/cq/edu/cqcet/lalateam/SearchApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EurekaServer/src/main/java/cn/edu/cqcet/teamlala/EurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TagServer/src/main/java/cn/edu/cqcet/teamlala/contorller/TagController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="38" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserCollectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserCollectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="79" column="77" selection-start-line="79" selection-start-column="72" selection-end-line="79" selection-end-column="77" />
-          <folding>
-            <element signature="method#getUserCollectByOpenId#0;class#UserCollectController#0" />
-            <element signature="method#collectClick#0;class#UserCollectController#0" />
-            <element signature="method#insertNewsId2Collect#0;class#UserCollectController#0" />
-            <element signature="method#deleteNewsIdFromCollect#0;class#UserCollectController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserCollectServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-258">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="method#getNewsIsCollect#0;class#UserCollectServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserCollectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/serviceImpl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding>
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/po/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="70" lean-forward="true" selection-start-line="5" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/po/NewsUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/service/NewsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/serviceImpl/NewsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="29" column="60" lean-forward="true" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
-          <folding>
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/mapper/NewsDetailMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#319#793#1" />
-            <element signature="e#880#1156#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/mapper/NewsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="e#933#1263#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#461#679#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-          <folding>
-            <element signature="method#getNewsListByTagId#0;class#NewsController#0" />
-            <element signature="method#getCollectNewsByNewsId#0;class#NewsController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommentApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserServer/src/main/java/cn/edu/cqcet/lalatem/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="61" />
-          <folding>
-            <element signature="e#1801#1802#0" expanded="true" />
-            <element signature="e#1866#1867#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/po/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="method#User#0;class#User#0" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/mapper/CommentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="42" />
-          <folding>
-            <element signature="e#307#819#1" />
-            <element signature="e#906#1049#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="89" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/controller/NewsDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="52" column="86" selection-start-line="52" selection-start-column="86" selection-end-line="52" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#_getNewsDetailByNewsId#0;class#NewsDetailController#0" />
-            <element signature="method#getContentByNewsId#0;class#NewsDetailController#0" />
-            <element signature="method#addComment#0;class#NewsDetailController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/serviceImpl/NewsDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-          <folding>
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/service/CommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsServer/src/main/java/cn/edu/cqcet/teamlala/NewServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/CommetnServiceImpl/CommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="907">
-          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-          <folding>
-            <element signature="e#2284#2285#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommentServer/src/main/java/cn/edu/cqcet/teamlala/controller/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>SearchServer</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1587298866330">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587298866330" />
+    <state width="1015" height="189" key="GridCell.Tab.0.bottom" timestamp="1587284833818">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1015" height="189" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587284833818" />
+    <state width="1015" height="189" key="GridCell.Tab.0.center" timestamp="1587284833817">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1015" height="189" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587284833817" />
+    <state width="1015" height="189" key="GridCell.Tab.0.left" timestamp="1587284833817">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1015" height="189" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587284833817" />
+    <state width="1015" height="189" key="GridCell.Tab.0.right" timestamp="1587284833818">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1015" height="189" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587284833818" />
+    <state width="1015" height="189" key="GridCell.Tab.1.bottom" timestamp="1587284833818">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1015" height="189" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587284833818" />
+    <state width="1015" height="189" key="GridCell.Tab.1.center" timestamp="1587284833818">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1015" height="189" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587284833818" />
+    <state width="1015" height="189" key="GridCell.Tab.1.left" timestamp="1587284833818">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1015" height="189" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587284833818" />
+    <state width="1015" height="189" key="GridCell.Tab.1.right" timestamp="1587284833818">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1015" height="189" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587284833818" />
+    <state x="125" y="75" width="933" height="738" key="SettingsEditor" timestamp="1587027947010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="125" y="75" width="933" height="738" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587027947010" />
+    <state x="719" y="316" width="644" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1587027187739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="719" y="316" width="644" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1587027187739" />
   </component>
 </project>

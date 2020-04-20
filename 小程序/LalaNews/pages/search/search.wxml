@@ -12,7 +12,7 @@
 	>
 		<!-- 搜索 -->
 		<view class="search-box">
-			<image class="search-icon" src="https://allall01.baidupcs.com/file/5fd84699ej51cefd77a9eb279e0f5a3f?bkt=en-43ea5360a23c0e20121fb8f53c4517e6f55d2eab5cfc89ee8241ea7c0017d5563a95e1965e9cf429b3861d02d99b320ce3634df01d1ebfb9f700dfd0f2f4c719&fid=2520579851-250528-732408632778266&time=1584769395&sign=FDTAXGERLQlBHSKfW-DCb740ccc5511e5e8fedcff06b081203-GXYzjoxx7DuM23VwVWzg%2BChwVuY%3D&to=79&size=6592&sta_dx=6592&sta_cs=0&sta_ft=png&sta_ct=0&sta_mt=0&fm2=MH%2CYangquan%2CAnywhere%2C%2Cchongqing%2Cpbs&ctime=1584769307&mtime=1584769307&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=6592&vuk=2520579851&iv=0&htype=&randtype=&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-cafb48cc891cf533cc88f606aef58e462661137183c598323093e5716b3477e54654b622c3bb70666a224d8e34c8b5ab03fd94d416e1b928305a5e1275657320&sl=68616270&expires=8h&rt=pr&r=352661616&vbdid=2297401724&fin=%E6%90%9C%E7%B4%A22.png&fn=%E6%90%9C%E7%B4%A22.png&rtype=1&dp-logid=1868685015008332653&dp-callid=0.1&hps=1&tsl=200&csl=200&fsl=-1&csign=Q8GLXaLW5jg96POqvgnVtikHPPY%3D&so=0&ut=6&uter=4&serv=0&uc=2970450506&ti=9cf67ec2c4eb6cc0736d722c22b8b780646d4093f9f546b5&reqlabel=250528_f_a72782ca42bdadb680a2d03302f49c52_-1_50a000a426f104dcd1d2af8487a21d52&by=themis" bind:tap="" />
+			<image class="search-icon" src="http://ww1.sinaimg.cn/large/4c09a5b4gy1gdz2bltcq7j205k05kdfq.jpg" bind:tap="" />
 			<input
 			 value="{{value}}"
 			 type="text"
@@ -22,11 +22,17 @@
 			 bindfocus="focus"
 			 bindconfirm="confirm"
 			 bindblur="blur"
-			>
-			576
-			</input>
+			/>
 			<!-- 清除按钮 -->
 			<text class="{{isFoucs?'focus-text text':'text'}}" bind:tap="clear">x</text>
+		</view>
+		<!-- 显示搜索列表框 -->
+		<view class="search-list" wx:if="{{isSearch}}">
+			<block wx:for="{{searchListIndex}}">
+				<view class="search-item" bind:tap="searchItemClick" data-index="{{item}}">
+					{{recommendList[item].tagName}}
+				</view>
+			</block>
 		</view>
 		<!-- 已经添加 -->
 		<view class="already-add">
